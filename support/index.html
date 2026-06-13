@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kepto Support</title>
+<meta name="description" content="Get help with Kepto. We're a small studio and we read every message.">
+<link rel="icon" type="image/png" href="../img/kepto-logo.png">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="tb-home" href="https://retrieverlabs.com.au">
+    <img class="tb-logo" src="../img/logo.png" alt="Retriever Labs">
+    <span class="tb-name">Retriever Labs<span style="color:var(--amber)">.</span></span>
+  </a>
+  <nav class="tb-nav">
+    <a href="../">Kepto</a>
+    <a href="../privacy/">Privacy</a>
+    <a href="./" class="active">Support</a>
+  </nav>
+</div>
+
+<div class="bg-slip s1"></div>
+<div class="bg-slip s2"></div>
+<div class="bg-slip s3"></div>
+<div class="bg-slip s4"></div>
+
+<div class="doc">
+  <div class="doc-head">
+    <img class="doc-brand-logo" src="../img/kepto-logo.png" alt="Kepto">
+    <div class="doc-eyebrow">Retriever Labs</div>
+    <h1 class="doc-title">Kepto Support</h1>
+    <div class="doc-updated">We're a small studio and we read every message.</div>
+  </div>
+
+  <div class="support-card" id="contact">
+    <p class="support-lead">Have a question, found a bug, or want to suggest a feature? Send us a message and we'll help as soon as we can.</p>
+
+    <form class="form" action="https://formsubmit.co/YOUR_FORMSUBMIT_ALIAS" method="POST">
+      <input type="hidden" name="_subject" value="Kepto Support">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://kepto.com.au/support/?sent=1">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="form-row">
+        <label class="form-label" for="s-name">Your name</label>
+        <input class="form-input" id="s-name" type="text" name="Name" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="s-email">Email</label>
+        <input class="form-input" id="s-email" type="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="s-msg">Message</label>
+        <textarea class="form-textarea" id="s-msg" name="Message" placeholder="If you're reporting a bug, please include your device and iOS version." required></textarea>
+      </div>
+      <div class="form-actions">
+        <button class="form-submit" type="submit">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          Send message
+        </button>
+      </div>
+    </form>
+
+    <div class="form-thanks" id="formThanks" style="display:none;text-align:center;padding:6px 0;">
+      <p class="support-lead" style="margin:0;"><strong>Thanks — your message is on its way.</strong><br>We read every message and typically reply within a few days.</p>
+    </div>
+
+    <div class="support-sub">Typical reply time: a few days.<br>Please include your device and iOS version if reporting a bug.</div>
+  </div>
+
+  <div class="doc-body">
+    <hr class="doc-rule">
+    <h2>Common questions</h2>
+    <p><strong>Where is my data stored?</strong><br>On your device, and if you're signed into iCloud, synced privately to your own iCloud account. Kepto has no server and no account of its own, and the developer never sees your data. See our <a href="../privacy/">Privacy Policy</a> for details.</p>
+    <p><strong>How is my data backed up?</strong><br>If you're signed into iCloud, Kepto automatically syncs your items to your own private iCloud account. The developer never sees it. If you're not using iCloud, everything stays on your device.</p>
+    <p><strong>Will my receipts sync across devices?</strong><br>Yes, if you're signed into the same iCloud account on each device, your items sync across them through your private iCloud, directly between your devices and Apple. See our <a href="../privacy/">Privacy Policy</a> for details.</p>
+    <p><strong>I lost my phone — can you recover my data?</strong><br>We can't, because we never have a copy. But if you were signed into iCloud, your items will be there when you sign in on a new device.</p>
+  </div>
+
+  <div class="doc-foot">© 2026 Retriever Labs · Designed &amp; built in Sydney</div>
+  <div class="doc-bottom"></div>
+</div>
+
+<script>
+  if (new URLSearchParams(location.search).get('sent') === '1') {
+    var form = document.querySelector('#contact .form');
+    var thanks = document.getElementById('formThanks');
+    if (form) form.style.display = 'none';
+    if (thanks) thanks.style.display = 'block';
+    var anchor = document.getElementById('contact');
+    if (anchor) anchor.scrollIntoView();
+  }
+</script>
+</body>
+</html>

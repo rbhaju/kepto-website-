@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kepto Privacy Policy</title>
-<meta name="description" content="Kepto's privacy policy. Everything stays on your device. We never collect, sell, or share your data.">
+<title>Privacy Policy — Kepto</title>
+<meta name="description" content="Kepto's privacy policy. Everything stays on your device. No analytics, no tracking, no servers.">
 <link rel="icon" type="image/png" href="../img/kepto-logo.png">
 <link rel="stylesheet" href="../css/base.css">
 <link rel="stylesheet" href="../css/pages.css">
@@ -31,54 +31,55 @@
 <div class="doc">
   <div class="doc-head">
     <img class="doc-brand-logo" src="../img/kepto-logo.png" alt="Kepto">
-    <div class="doc-eyebrow">Retriever Labs</div>
-    <h1 class="doc-title">Kepto Privacy Policy</h1>
-    <div class="doc-updated">Last updated: 8 June 2026</div>
+    <div class="doc-eyebrow">Privacy Policy</div>
+    <h1 class="doc-title">Everything stays on your device.</h1>
+    <div class="doc-updated">Effective 13 June 2026</div>
   </div>
 
   <div class="doc-body">
-    <p>Kepto is built on one principle: <strong>your data stays with you.</strong> Here's exactly how your information is handled, section by section.</p>
+    <p>Kepto is a <strong>privacy-first warranty and receipt tracker.</strong> We have built Kepto so that nothing about you, your receipts, or your purchases ever leaves your device.</p>
 
-    <h2>Your data stays with you</h2>
-    <p>Kepto stores all your warranty and receipt information <strong>locally on your device</strong> using Apple's SwiftData framework. Nothing is uploaded to the developer's servers.</p>
+    <h2>Data we collect</h2>
+    <p><strong>None.</strong> We do not run any analytics, advertising, crash reporting, or tracking SDKs. We have no servers that receive data from the app. We do not have an account system; the app works without you identifying yourself.</p>
 
-    <h2>iCloud sync</h2>
-    <p>If you're signed into iCloud, your items are also synced to your <strong>private iCloud account</strong> and shared across the Apple devices using the same iCloud login. The developer of Kepto never sees or stores this data. It moves directly between your device and Apple's iCloud servers.</p>
-
-    <h2>Receipt scanning and storage</h2>
-    <p>When you scan or upload a receipt, the image is processed <strong>entirely on your device</strong> using Apple's Vision framework. Neither the image nor the extracted text is ever sent over the network. The original receipt photo is saved locally alongside the item record so you can view it later.</p>
-
-    <h2>Kepto Premium</h2>
-    <p>Premium unlocks unlimited items, PDF and CSV exports, date range exports, service reminders, advanced stats and custom categories as a one-time purchase. The purchase is handled entirely by Apple's StoreKit. Kepto receives only a yes-or-no entitlement and a transaction ID. Retriever Labs never sees your Apple ID, payment details, or location. You can restore a previous purchase any time from the upgrade screen.</p>
-
-    <h2>Exporting your data</h2>
-    <p>Kepto can create several kinds of export, each handed straight to the system share sheet. Anything you do with the resulting file (AirDrop, email, save to Files, and so on) is your choice.</p>
+    <h2>Where your data is stored</h2>
     <ul>
-      <li><strong>PDF Archive</strong> — a formatted document of all your items.</li>
-      <li><strong>CSV Spreadsheet</strong> — a file containing all your item details.</li>
-      <li><strong>Date Range PDF</strong> (Premium) — a PDF limited to the date range you choose.</li>
-      <li><strong>Single-item PDF</strong> — share an individual item as a PDF from its detail screen.</li>
+      <li>All receipts, photos, warranty records, and preferences are stored on your device.</li>
+      <li>If you turn on iCloud Sync in Settings, your data syncs through your own iCloud account between the Apple devices you sign into with the same Apple ID. Apple's privacy terms apply to that sync; Retriever Labs has no access to it.</li>
     </ul>
 
-    <h2>Notifications</h2>
-    <p>Kepto schedules <strong>local notifications on your device only</strong>. No notification content is ever sent over the network. This covers:</p>
+    <h2>On-device AI receipt parsing</h2>
     <ul>
-      <li><strong>Warranty reminders</strong> — alerts before an item's warranty expires.</li>
-      <li><strong>Monthly check-in</strong> — a reminder on the 1st of each month.</li>
-      <li><strong>Service reminders</strong> (Premium) — per-item reminders, off by default.</li>
+      <li>On iPhone 15 Pro and newer (and Apple Silicon iPads and Macs), with Apple Intelligence enabled in iOS Settings, Kepto uses Apple's on-device Foundation Models framework to extract structured fields from your receipt.</li>
+      <li>The receipt image, the OCR text, and the extracted fields are processed entirely on your device. Nothing is sent over the network to Apple, to Retriever Labs, or to anyone else.</li>
+      <li>You can disable Apple Intelligence at any time in Settings → Apple Intelligence &amp; Siri. Kepto will fall back to a local heuristic parser with no change to functionality.</li>
     </ul>
-    <p>You can turn any of these off at any time in Settings.</p>
 
-    <h2>No analytics</h2>
-    <p>Kepto does <strong>not</strong> collect analytics, crash reports, advertising identifiers, or any other telemetry.</p>
+    <h2>On-device receipt OCR</h2>
+    <p>All receipt photos are processed locally using Apple's Vision framework. The image never leaves your phone.</p>
+
+    <h2>Permissions we request</h2>
+    <ul>
+      <li><strong>Camera</strong> — only when you tap "Scan Receipt", to capture a receipt for OCR.</li>
+      <li><strong>Notifications</strong> — only with your permission, to remind you before warranties expire.</li>
+    </ul>
+
+    <h2>In-app purchases</h2>
+    <p>The Kepto Premium one-time unlock is handled by Apple's StoreKit. Apple sends Kepto only a yes/no entitlement and a transaction ID. Retriever Labs never sees your Apple ID, payment method, or location.</p>
+
+    <h2>Children</h2>
+    <p>Kepto is not directed at children under 13 and does not knowingly collect data from anyone.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>We will update this page if anything changes. The effective date at the top will move.</p>
 
     <h2>Contact</h2>
-    <p>Questions or concerns? <a href="../support/#contact">Send us a message</a>.</p>
+    <p>For questions or to exercise your data rights, <a href="../support/">contact us via kepto.com.au/support</a>.</p>
 
     <p class="doc-note">This document describes how Kepto handles your information. It is provided for transparency and is not legal advice.</p>
   </div>
 
-  <div class="doc-foot">© 2026 Retriever Labs · Designed &amp; built in Sydney</div>
+  <div class="doc-foot">© 2026 Retriever Labs Pty Ltd · Designed &amp; built in Sydney</div>
   <div class="doc-bottom"></div>
 </div>
 

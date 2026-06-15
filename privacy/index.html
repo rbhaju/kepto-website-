@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Kepto</title>
-<meta name="description" content="Kepto's privacy policy. Everything stays on your device. No analytics, no tracking, no servers.">
+<meta name="description" content="Kepto's privacy policy. Everything stays on your device, on iPhone and Android. No analytics, no tracking, no servers.">
 <link rel="icon" type="image/png" href="../img/kepto-logo.png">
 <link rel="stylesheet" href="../css/base.css">
 <link rel="stylesheet" href="../css/pages.css">
+<style>
+  .doc-body .plat{display:block;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber-deep);margin:20px 0 6px;}
+</style>
 </head>
 <body>
 
@@ -33,39 +36,64 @@
     <img class="doc-brand-logo" src="../img/kepto-logo.png" alt="Kepto">
     <div class="doc-eyebrow">Privacy Policy</div>
     <h1 class="doc-title">Everything stays on your device.</h1>
-    <div class="doc-updated">Effective 13 June 2026</div>
+    <div class="doc-updated">Effective 15 June 2026</div>
   </div>
 
   <div class="doc-body">
-    <p>Kepto is a <strong>privacy-first warranty and receipt tracker.</strong> We have built Kepto so that nothing about you, your receipts, or your purchases ever leaves your device.</p>
+    <p>Kepto is a <strong>privacy-first warranty and receipt tracker.</strong> We have built Kepto so that nothing about you, your receipts, or your purchases ever leaves your device — on iPhone and on Android.</p>
 
     <h2>Data we collect</h2>
+    <span class="plat">On iPhone</span>
     <p><strong>None.</strong> We do not run any analytics, advertising, crash reporting, or tracking SDKs. We have no servers that receive data from the app. We do not have an account system; the app works without you identifying yourself.</p>
+    <span class="plat">On Android</span>
+    <p>The same applies: none. The Android app contains no analytics, advertising, crash-reporting, or tracking SDKs. It also requests no internet permission at all — the app is technically incapable of transmitting your data off the device.</p>
 
     <h2>Where your data is stored</h2>
+    <span class="plat">On iPhone</span>
     <ul>
       <li>All receipts, photos, warranty records, and preferences are stored on your device.</li>
       <li>If you turn on iCloud Sync in Settings, your data syncs through your own iCloud account between the Apple devices you sign into with the same Apple ID. Apple's privacy terms apply to that sync; Retriever Labs has no access to it.</li>
     </ul>
+    <span class="plat">On Android</span>
+    <p>Your data is stored on your device. If you turn on Back up to Google in Settings (off by default), Kepto uses Android's Auto Backup to copy your data to your own Google account, so it can be restored if you reinstall the app or set up a new device. This is a backup-and-restore feature, not continuous cross-device sync. Google's privacy terms apply to that backup; Retriever Labs has no access to it.</p>
 
     <h2>On-device AI receipt parsing</h2>
+    <span class="plat">On iPhone</span>
     <ul>
       <li>On iPhone 15 Pro and newer (and Apple Silicon iPads and Macs), with Apple Intelligence enabled in iOS Settings, Kepto uses Apple's on-device Foundation Models framework to extract structured fields from your receipt.</li>
       <li>The receipt image, the OCR text, and the extracted fields are processed entirely on your device. Nothing is sent over the network to Apple, to Retriever Labs, or to anyone else.</li>
       <li>You can disable Apple Intelligence at any time in Settings → Apple Intelligence &amp; Siri. Kepto will fall back to a local heuristic parser with no change to functionality.</li>
     </ul>
+    <span class="plat">On Android</span>
+    <p>Kepto uses Google AI Edge (AICore / Gemini Nano) to extract structured fields from your receipts directly on your device, with no network transmission and no API key. This runs on AICore-capable devices (for example Pixel 8 Pro/9 or Galaxy S24 and newer); on other devices Kepto uses a built-in on-device heuristic parser instead. Either way, the receipt image, the OCR text, and the extracted fields are processed entirely on your device.</p>
 
     <h2>On-device receipt OCR</h2>
+    <span class="plat">On iPhone</span>
     <p>All receipt photos are processed locally using Apple's Vision framework. The image never leaves your phone.</p>
+    <span class="plat">On Android</span>
+    <p>All receipt photos are processed locally using Google's ML Kit Text Recognition, which runs offline with a model bundled in the app. The image never leaves your phone.</p>
 
     <h2>Permissions we request</h2>
+    <span class="plat">On iPhone</span>
     <ul>
       <li><strong>Camera</strong> — only when you tap "Scan Receipt", to capture a receipt for OCR.</li>
       <li><strong>Notifications</strong> — only with your permission, to remind you before warranties expire.</li>
     </ul>
+    <span class="plat">On Android</span>
+    <p>Kepto requests Camera access only when you tap "Scan Receipt", to capture a receipt for OCR, and optional Notifications permission (Android 13 and newer) for warranty reminders, which you can decline. Adding a receipt from "Add from Photos" uses Android's system Photo Picker — you choose specific images and Kepto receives no broad gallery or storage access. Kepto requests no internet permission.</p>
 
     <h2>In-app purchases</h2>
+    <span class="plat">On iPhone</span>
     <p>The Kepto Premium one-time unlock is handled by Apple's StoreKit. Apple sends Kepto only a yes/no entitlement and a transaction ID. Retriever Labs never sees your Apple ID, payment method, or location.</p>
+    <span class="plat">On Android</span>
+    <p>The Kepto Premium one-time unlock is handled by Google Play Billing. Google sends Kepto only a yes/no entitlement and an order ID. Retriever Labs never sees your Google account, payment method, or location.</p>
+
+    <h2>Third-party libraries</h2>
+    <p>The few third-party components Kepto uses all run <strong>on your device</strong> and send nothing over the network.</p>
+    <ul>
+      <li><strong>iPhone</strong> — Apple's Vision, Foundation Models, and StoreKit frameworks.</li>
+      <li><strong>Android</strong> — Google Play Billing Library, Google ML Kit (Text Recognition), and the Google AI Edge SDK (AICore).</li>
+    </ul>
 
     <h2>Children</h2>
     <p>Kepto is not directed at children under 13 and does not knowingly collect data from anyone.</p>

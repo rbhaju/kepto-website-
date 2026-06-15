@@ -52,13 +52,17 @@
     <span class="plat">On iPhone</span>
     <ul>
       <li>All receipts, photos, warranty records, and preferences are stored on your device.</li>
-      <li>If you turn on iCloud Sync in Settings, your data syncs through your own iCloud account between the Apple devices you sign into with the same Apple ID. Apple's privacy terms apply to that sync; Retriever Labs has no access to it.</li>
+      <li>iCloud Sync is on by default for fresh installs so that a reinstall on the same Apple ID can restore your existing receipts. You can turn it off at any time in Settings &rarr; Sync &amp; Backup.</li>
+      <li>When iCloud Sync is on, your data syncs through your own iCloud account between the Apple devices signed into the same Apple ID. Apple's privacy terms apply to that sync; Retriever Labs has no access to it.</li>
     </ul>
     <span class="plat">On Android</span>
     <ul>
       <li>Your data is stored on your device.</li>
       <li>If you turn on Back up to Google in Settings (off by default), Kepto uses Android's Auto Backup to copy your data to your own Google account, so it can be restored if you reinstall the app or set up a new device. This is a backup-and-restore feature, not continuous cross-device sync. Google's privacy terms apply to that backup; Retriever Labs has no access to it.</li>
     </ul>
+
+    <h2>Manual backup files</h2>
+    <p>Kepto lets you export every receipt, every photo, and every custom category to a single <code>.json</code> file via Settings &rarr; Sync &amp; Backup &rarr; Export Backup. You choose where it goes &mdash; Files, iCloud Drive, email, AirDrop, or anywhere else iOS lets you share. Retriever Labs never sees the file. You can also restore from a backup file the same way; data is merged by ID, and nothing existing on your device is overwritten.</p>
 
     <h2>On-device AI receipt parsing</h2>
     <span class="plat">On iPhone</span>

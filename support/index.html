@@ -4,10 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kepto Support</title>
-<meta name="description" content="Get help with Kepto. We're a small studio and we read every message.">
+<meta name="description" content="Get help with Kepto on iPhone and Android. We're a small studio and we read every message.">
 <link rel="icon" type="image/png" href="../img/kepto-logo.png">
 <link rel="stylesheet" href="../css/base.css">
 <link rel="stylesheet" href="../css/pages.css">
+<style>
+  .doc-body .plat{display:block;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber-deep);margin:16px 0 4px;}
+  .faq-q{font-weight:700;color:var(--ink);margin-top:30px;}
+  .faq-q:first-of-type{margin-top:6px;}
+</style>
 </head>
 <body>
 
@@ -17,7 +22,7 @@
     <span class="tb-name">Kepto</span>
   </a>
   <nav class="tb-nav">
-    <a href="../">Kepto</a>
+    <a href="/">Kepto</a>
     <a href="../privacy/">Privacy</a>
     <a href="./" class="active">Support</a>
   </nav>
@@ -31,8 +36,8 @@
 <div class="doc">
   <div class="doc-head">
     <img class="doc-brand-logo" src="../img/kepto-logo.png" alt="Kepto">
-    <div class="doc-eyebrow">Retriever Labs</div>
-    <h1 class="doc-title">Kepto Support</h1>
+    <div class="doc-eyebrow">Kepto · Support</div>
+    <h1 class="doc-title">How can we help?</h1>
     <div class="doc-updated">We're a small studio and we read every message.</div>
   </div>
 
@@ -55,8 +60,12 @@
         <input class="form-input" id="s-email" type="email" name="email" required>
       </div>
       <div class="form-row">
+        <label class="form-label" for="s-device">Device &amp; OS version <span style="color:var(--ink3);font-weight:400;text-transform:none;letter-spacing:0;">(optional, helps with bugs)</span></label>
+        <input class="form-input" id="s-device" type="text" name="Device" placeholder="e.g. iPhone 15 Pro · iOS 18  /  Pixel 9 · Android 15">
+      </div>
+      <div class="form-row">
         <label class="form-label" for="s-msg">Message</label>
-        <textarea class="form-textarea" id="s-msg" name="Message" placeholder="If you're reporting a bug, please include your device and iOS version." required></textarea>
+        <textarea class="form-textarea" id="s-msg" name="Message" required></textarea>
       </div>
       <div class="form-actions">
         <button class="form-submit" type="submit">
@@ -70,19 +79,61 @@
       <p class="support-lead" style="margin:0;"><strong>Thanks — your message is on its way.</strong><br>We read every message and typically reply within a few days.</p>
     </div>
 
-    <div class="support-sub">Typical reply time: a few days.<br>Please include your device and iOS version if reporting a bug.</div>
+    <div class="support-sub">Typical reply time: a few days.<br>Kepto runs on iPhone and Android.</div>
   </div>
 
   <div class="doc-body">
     <hr class="doc-rule">
     <h2>Common questions</h2>
-    <p><strong>Where is my data stored?</strong><br>On your device, and if you're signed into iCloud, synced privately to your own iCloud account. Kepto has no server and no account of its own, and the developer never sees your data. See our <a href="../privacy/">Privacy Policy</a> for details.</p>
-    <p><strong>How is my data backed up?</strong><br>If you're signed into iCloud, Kepto automatically syncs your items to your own private iCloud account. The developer never sees it. If you're not using iCloud, everything stays on your device.</p>
-    <p><strong>Will my receipts sync across devices?</strong><br>Yes, if you're signed into the same iCloud account on each device, your items sync across them through your private iCloud, directly between your devices and Apple. See our <a href="../privacy/">Privacy Policy</a> for details.</p>
-    <p><strong>I lost my phone — can you recover my data?</strong><br>We can't, because we never have a copy. But if you were signed into iCloud, your items will be there when you sign in on a new device.</p>
+
+    <p class="faq-q">Is my data private?</p>
+    <p>Yes. Kepto has no account, no ads, and no tracking, and there are no Retriever Labs servers that ever receive your data. Your receipts and records are processed and stored on your device.</p>
+
+    <p class="faq-q">Where is my data stored?</p>
+    <p>On your device. We never hold a copy.</p>
+    <span class="plat">On iPhone</span>
+    <p>If you turn on iCloud Sync in Settings, your data is also kept in your own private iCloud account.</p>
+    <span class="plat">On Android</span>
+    <p>If you turn on Back up to Google in Settings (off by default), your data is backed up to your own Google account.</p>
+
+    <p class="faq-q">Will my receipts sync to my other devices?</p>
+    <span class="plat">On iPhone</span>
+    <p>Yes. With iCloud Sync on, items sync across the Apple devices signed into the same Apple ID, directly through Apple.</p>
+    <span class="plat">On Android</span>
+    <p>Android uses backup-and-restore rather than continuous sync. Your data is restored when you reinstall Kepto or set up a new device with Back up to Google enabled.</p>
+
+    <p class="faq-q">I got a new phone, or reinstalled the app. Will my data come back?</p>
+    <span class="plat">On iPhone</span>
+    <p>Yes, if iCloud Sync was on — sign into the same Apple ID and your cabinet returns.</p>
+    <span class="plat">On Android</span>
+    <p>Yes, if Back up to Google was on — sign into the same Google account during setup.</p>
+    <p>If neither was turned on, your data lived only on the old device and can't be recovered, because we never had a copy.</p>
+
+    <p class="faq-q">Does Kepto need the internet?</p>
+    <p>No. Scanning, parsing, reminders, and everything else run on your device, so Kepto works fully offline. On Android the app doesn't even request internet permission.</p>
+
+    <p class="faq-q">How does receipt scanning work?</p>
+    <p>You snap a receipt and Kepto reads the item, store, date, and price — entirely on your phone. The image never leaves your device.</p>
+    <span class="plat">On iPhone</span>
+    <p>Apple's Vision framework handles the text, and on supported devices with Apple Intelligence, Apple's on-device Foundation Models extract the details.</p>
+    <span class="plat">On Android</span>
+    <p>Google's ML Kit handles the text, and on supported devices Google AI Edge extracts the details.</p>
+
+    <p class="faq-q">What does Kepto Premium include, and how do I restore it?</p>
+    <p>Premium is a one-time purchase that unlocks unlimited items, PDF and CSV exports, and more. You can restore a previous purchase any time from the upgrade screen.</p>
+    <span class="plat">On iPhone</span>
+    <p>Handled by Apple's StoreKit.</p>
+    <span class="plat">On Android</span>
+    <p>Handled by Google Play Billing.</p>
+
+    <p class="faq-q">How do I export my data?</p>
+    <p>Use Export in Settings to create a PDF or CSV of your items and share it wherever you like — AirDrop, email, Files, or Drive. The choice of where it goes is yours.</p>
+
+    <p class="faq-q">I found a bug or have a suggestion.</p>
+    <p>We'd love to hear it. Use the form above and, if you're reporting a bug, please include your device and OS version so we can help quickly.</p>
   </div>
 
-  <div class="doc-foot">© 2026 Retriever Labs · Designed &amp; built in Sydney</div>
+  <div class="doc-foot">© 2026 Retriever Labs Pty Ltd · Designed &amp; built in Sydney</div>
   <div class="doc-bottom"></div>
 </div>
 

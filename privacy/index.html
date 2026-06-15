@@ -55,7 +55,10 @@
       <li>If you turn on iCloud Sync in Settings, your data syncs through your own iCloud account between the Apple devices you sign into with the same Apple ID. Apple's privacy terms apply to that sync; Retriever Labs has no access to it.</li>
     </ul>
     <span class="plat">On Android</span>
-    <p>Your data is stored on your device. If you turn on Back up to Google in Settings (off by default), Kepto uses Android's Auto Backup to copy your data to your own Google account, so it can be restored if you reinstall the app or set up a new device. This is a backup-and-restore feature, not continuous cross-device sync. Google's privacy terms apply to that backup; Retriever Labs has no access to it.</p>
+    <ul>
+      <li>Your data is stored on your device.</li>
+      <li>If you turn on Back up to Google in Settings (off by default), Kepto uses Android's Auto Backup to copy your data to your own Google account, so it can be restored if you reinstall the app or set up a new device. This is a backup-and-restore feature, not continuous cross-device sync. Google's privacy terms apply to that backup; Retriever Labs has no access to it.</li>
+    </ul>
 
     <h2>On-device AI receipt parsing</h2>
     <span class="plat">On iPhone</span>
@@ -65,7 +68,11 @@
       <li>You can disable Apple Intelligence at any time in Settings → Apple Intelligence &amp; Siri. Kepto will fall back to a local heuristic parser with no change to functionality.</li>
     </ul>
     <span class="plat">On Android</span>
-    <p>Kepto uses Google AI Edge (AICore / Gemini Nano) to extract structured fields from your receipts directly on your device, with no network transmission and no API key. This runs on AICore-capable devices (for example Pixel 8 Pro/9 or Galaxy S24 and newer); on other devices Kepto uses a built-in on-device heuristic parser instead. Either way, the receipt image, the OCR text, and the extracted fields are processed entirely on your device.</p>
+    <ul>
+      <li>Kepto uses Google AI Edge (AICore / Gemini Nano) to extract structured fields from your receipts directly on your device, with no network transmission and no API key.</li>
+      <li>This runs on AICore-capable devices (for example Pixel 8 Pro/9 or Galaxy S24 and newer); on other devices Kepto uses a built-in on-device heuristic parser instead.</li>
+      <li>Either way, the receipt image, the OCR text, and the extracted fields are processed entirely on your device.</li>
+    </ul>
 
     <h2>On-device receipt OCR</h2>
     <span class="plat">On iPhone</span>
@@ -80,7 +87,12 @@
       <li><strong>Notifications</strong> — only with your permission, to remind you before warranties expire.</li>
     </ul>
     <span class="plat">On Android</span>
-    <p>Kepto requests Camera access only when you tap "Scan Receipt", to capture a receipt for OCR, and optional Notifications permission (Android 13 and newer) for warranty reminders, which you can decline. Adding a receipt from "Add from Photos" uses Android's system Photo Picker — you choose specific images and Kepto receives no broad gallery or storage access. Kepto requests no internet permission.</p>
+    <ul>
+      <li><strong>Camera</strong> — only when you tap "Scan Receipt", to capture a receipt for OCR.</li>
+      <li><strong>Notifications</strong> (Android 13 and newer) — optional, for warranty reminders; you can decline.</li>
+      <li><strong>Add from Photos</strong> — uses Android's system Photo Picker, so you choose specific images and Kepto receives no broad gallery or storage access.</li>
+      <li>Kepto requests <strong>no internet permission</strong>.</li>
+    </ul>
 
     <h2>In-app purchases</h2>
     <span class="plat">On iPhone</span>

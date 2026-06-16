@@ -7,12 +7,7 @@
 <meta name="description" content="Get help with Kepto on iPhone and Android. We're a small studio and we read every message.">
 <link rel="icon" type="image/png" href="../img/kepto-logo.png">
 <link rel="stylesheet" href="../css/base.css">
-<link rel="stylesheet" href="../css/pages.css">
-<style>
-  .doc-body .plat{display:block;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber-deep);margin:16px 0 4px;}
-  .faq-q{font-weight:700;color:var(--ink);margin-top:30px;}
-  .faq-q:first-of-type{margin-top:6px;}
-</style>
+<link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
 
@@ -33,16 +28,16 @@
 <div class="bg-slip s3"></div>
 <div class="bg-slip s4"></div>
 
-<div class="doc">
-  <div class="doc-head">
-    <img class="doc-brand-logo" src="../img/kepto-logo.png" alt="Kepto">
-    <div class="doc-eyebrow">Kepto · Support</div>
-    <h1 class="doc-title">How can we help?</h1>
-    <div class="doc-updated">We're a small studio and we read every message.</div>
+<main class="lp">
+  <div class="lp-dochead">
+    <img class="lp-logo" src="../img/kepto-logo.png" alt="Kepto">
+    <div class="lp-eyebrow">Kepto · Support</div>
+    <h1>How can we help<span class="dot">?</span></h1>
+    <div class="lp-meta">We're a small studio and we read every message.</div>
   </div>
 
-  <div class="support-card" id="contact">
-    <p class="support-lead">Have a question, found a bug, or want to suggest a feature? Send us a message and we'll help as soon as we can.</p>
+  <div class="lp-contact" id="contact">
+    <p class="lead">Have a question, found a bug, or want to suggest a feature? Send us a message and we'll help as soon as we can.</p>
 
     <form class="form" action="https://formsubmit.co/rohanbhaju@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="Kepto Support">
@@ -60,7 +55,7 @@
         <input class="form-input" id="s-email" type="email" name="email" required>
       </div>
       <div class="form-row">
-        <label class="form-label" for="s-device">Device &amp; OS version <span style="color:var(--ink3);font-weight:400;text-transform:none;letter-spacing:0;">(optional, helps with bugs)</span></label>
+        <label class="form-label" for="s-device">Device &amp; OS version <span style="color:var(--ink-3);font-weight:400;text-transform:none;letter-spacing:0;">(optional, helps with bugs)</span></label>
         <input class="form-input" id="s-device" type="text" name="Device" placeholder="e.g. iPhone 15 Pro · iOS 18  /  Pixel 9 · Android 15">
       </div>
       <div class="form-row">
@@ -76,14 +71,13 @@
     </form>
 
     <div class="form-thanks" id="formThanks" style="display:none;text-align:center;padding:6px 0;">
-      <p class="support-lead" style="margin:0;"><strong>Thanks — your message is on its way.</strong><br>We read every message and typically reply within a few days.</p>
+      <p class="lead" style="margin:0;"><strong>Thanks — your message is on its way.</strong><br>We read every message and typically reply within a few days.</p>
     </div>
 
-    <div class="support-sub">Typical reply time: a few days.<br>Kepto runs on iPhone and Android.</div>
+    <div class="sub">Typical reply time: a few days.<br>Kepto runs on iPhone and Android.</div>
   </div>
 
-  <div class="doc-body">
-    <hr class="doc-rule">
+  <div class="lp-prose">
     <h2>Common questions</h2>
 
     <p class="faq-q">Is my data private?</p>
@@ -133,9 +127,8 @@
     <p>We'd love to hear it. Use the form above and, if you're reporting a bug, please include your device and OS version so we can help quickly.</p>
   </div>
 
-  <div class="doc-foot">© 2026 Retriever Labs Pty Ltd · Designed &amp; built in Sydney</div>
-  <div class="doc-bottom"></div>
-</div>
+  <div class="lp-foot">© 2026 Retriever Labs Pty Ltd · Made in Sydney</div>
+</main>
 
 <script>
   if (new URLSearchParams(location.search).get('sent') === '1') {

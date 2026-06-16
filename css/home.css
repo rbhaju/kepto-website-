@@ -60,3 +60,32 @@
 .lp-foot{text-align:center;padding-top:34px;color:var(--ink-3);font-family:var(--mono);font-size:12px;line-height:1.9;letter-spacing:0.03em;}
 .lp-foot a{color:var(--ink-2);text-decoration:none;border-bottom:1px dashed var(--ink-3);padding-bottom:1px;}
 .lp-foot a:hover{color:var(--ink);}
+
+/* =========================================================
+   Document pages (privacy / support) — same .lp paper card
+   ========================================================= */
+.lp-dochead{text-align:center;padding-bottom:34px;border-bottom:1px dashed var(--dash);}
+.lp-dochead .lp-logo{margin-bottom:16px;}
+.lp-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber-deep);font-weight:700;}
+.lp-dochead h1{font-family:var(--font-display);font-size:clamp(28px,4.8vw,42px);font-weight:700;letter-spacing:-0.6px;line-height:1.14;color:var(--ink);margin:12px 0 0;}
+.lp-dochead h1 .dot{color:var(--amber);}
+.lp-meta{font-family:var(--mono);font-size:12px;color:var(--ink-3);margin-top:14px;letter-spacing:0.04em;}
+
+.lp-prose{padding-top:30px;}
+.lp-prose h2{font-family:var(--font-display);font-size:clamp(20px,3vw,26px);font-weight:700;letter-spacing:-0.3px;color:var(--ink);margin:36px 0 10px;}
+.lp-prose h2:first-child{margin-top:0;}
+.lp-prose p{font-family:var(--font-body);font-size:15.5px;line-height:1.75;color:var(--ink-2);margin:10px 0;}
+.lp-prose ul{margin:10px 0;padding-left:22px;}
+.lp-prose li{font-family:var(--font-body);font-size:15px;line-height:1.6;color:var(--ink-2);margin:6px 0;}
+.lp-prose a{color:var(--amber-deep);text-decoration:underline;text-underline-offset:2px;}
+.lp-prose strong{color:var(--ink);}
+.lp-prose code{font-family:var(--mono);font-size:0.92em;background:rgba(120,90,40,0.10);padding:1px 5px;border-radius:4px;}
+.lp-prose .plat{display:block;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber-deep);margin:18px 0 4px;}
+.lp-prose .faq-q{font-weight:700;color:var(--ink);font-size:16px;margin-top:32px;}
+.lp-prose .faq-q:first-of-type{margin-top:8px;}
+.lp-prose .lp-note{font-size:13px;color:var(--ink-3);margin-top:28px;}
+
+/* contact card */
+.lp-contact{background:#FFFDF7;border:1.5px solid var(--paper-edge);border-radius:12px;padding:26px;margin:30px 0 4px;}
+.lp-contact .lead{font-family:var(--font-body);font-size:16px;line-height:1.6;color:var(--ink);margin:0 0 18px;}
+.lp-contact .sub{font-family:var(--mono);font-size:11px;line-height:1.7;color:var(--ink-3);margin-top:18px;text-align:center;letter-spacing:0.03em;}

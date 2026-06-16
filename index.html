@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kepto · Keep what matters</title>
-<meta name="description" content="Snap the receipt. We remember it. Nothing leaves your phone. Kepto tracks your warranties and home inventory, fully offline.">
+<title>Kepto · Keep proof of what you bought</title>
+<meta name="description" content="A privacy-first warranty and receipt tracker for iPhone and iPad. Every receipt, every photo, every warranty in one place. Nothing leaves your device.">
 <link rel="icon" type="image/png" href="img/kepto-logo.png">
 <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/kepto.css">
+<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
@@ -28,91 +28,13 @@
 <div class="bg-slip s3"></div>
 <div class="bg-slip s4"></div>
 
-<div class="receipt">
-  <div class="receipt-top"></div>
-
-  <!-- BRAND -->
-  <div class="r-brand">
-    <img class="r-logo" src="img/kepto-logo.png" alt="Kepto">
-    <div class="r-name">Kepto</div>
-    <div class="r-tagline">★ Keep what matters ★</div>
-    <div class="r-addr">EST. 2026 · FOR iPHONE</div>
-  </div>
-
-  <hr class="divider">
+<main class="lp">
 
   <!-- HERO -->
-  <div class="hero">
-    <div class="hero-h">Snap the receipt.<br>We remember it.</div>
-    <div class="hero-p">Kepto turns a photo of any receipt into a filed, tracked purchase, so you never miss a warranty or lose proof of what you own. Everything stays on your phone.</div>
-  </div>
-
-  <div class="divider-label"><span>What you get</span></div>
-
-  <!-- FEATURES AS LINE ITEMS -->
-  <div class="items">
-    <div class="line reveal">
-      <div class="line-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M3 7V5.5A1.5 1.5 0 0 1 4.5 4H7M17 4h2.5A1.5 1.5 0 0 1 21 5.5V7M21 17v1.5a1.5 1.5 0 0 1-1.5 1.5H17M7 20H4.5A1.5 1.5 0 0 1 3 18.5V17"/><path d="M3 12h18"/></svg></div>
-      <div class="line-body">
-        <div class="line-title">Scan, don't type</div>
-        <div class="line-desc">Point your camera at a receipt. Kepto reads the item, store, date and price automatically, on your device.</div>
-      </div>
-      <div class="line-qty">×1</div>
-    </div>
-
-    <div class="line reveal">
-      <div class="line-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 6 2.5 7 2.5 7H3.5S6 15 6 9Z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></div>
-      <div class="line-body">
-        <div class="line-title">Never miss a warranty</div>
-        <div class="line-desc">Get reminded before any warranty runs out, so you claim the repair or replacement while it's still free.</div>
-      </div>
-      <div class="line-qty">×1</div>
-    </div>
-
-    <div class="line reveal">
-      <div class="line-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M12 2.5 21 7v10l-9 4.5L3 17V7Z"/><path d="M3 7l9 4.5L21 7"/><path d="M12 11.5V21.5"/></svg></div>
-      <div class="line-body">
-        <div class="line-title">A home inventory, built for you</div>
-        <div class="line-desc">Every purchase becomes a documented record of what you own, grouped by room, ready when you need it.</div>
-      </div>
-      <div class="line-qty">×1</div>
-    </div>
-
-    <div class="line reveal">
-      <div class="line-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M13 2.5H6.5A1.5 1.5 0 0 0 5 4v16a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 19 20V8.5Z"/><path d="M13 2.5V8.5H19"/><path d="M8.5 13H15M8.5 16.5H15"/></svg></div>
-      <div class="line-body">
-        <div class="line-title">Insurance-ready export</div>
-        <div class="line-desc">Generate a clean PDF of everything you own, with prices and proof, to hand straight to your insurer.</div>
-      </div>
-      <div class="line-qty">×1</div>
-    </div>
-  </div>
-
-  <hr class="divider">
-
-  <!-- PRIVACY STAMP -->
-  <div class="stamp-row">
-    <div class="privacy-stamp reveal">
-      <svg class="ic" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/><circle cx="12" cy="15.5" r="1"/></svg>
-      Nothing leaves<br>your phone
-    </div>
-  </div>
-  <div class="hero-p" style="text-align:center;font-size:12px;">No account. No ads. No tracking. Your receipts stay on your device. Any sync goes only through your own iCloud or Google account, never ours. <a href="privacy/">Read our Privacy Policy</a>.</div>
-
-  <div class="divider-label"><span>Order summary</span></div>
-
-  <!-- TOTALS -->
-  <div class="totals">
-    <div class="total-row"><span>Warranty tracking</span><span>Included</span></div>
-    <div class="total-row"><span>Receipt scanning (OCR)</span><span>Included</span></div>
-    <div class="total-row"><span>Home inventory</span><span>Included</span></div>
-    <div class="total-row"><span>Insurance PDF export</span><span>Included</span></div>
-    <div class="total-row"><span>Your privacy</span><span>Always</span></div>
-    <div class="total-row grand"><span>Total</span><span>Free to start</span></div>
-  </div>
-
-  <!-- CTA -->
-  <div class="cta-wrap">
+  <section class="lp-hero">
+    <img class="lp-logo" src="img/kepto-logo.png" alt="Kepto">
+    <h1 class="lp-h1">Keep proof of what you bought<span class="dot">.</span></h1>
+    <p class="lp-sub">A privacy-first warranty and receipt tracker for iPhone and iPad. Every receipt, every photo, every warranty in one place.</p>
     <div class="store-badges">
       <a class="app-btn" href="https://apps.apple.com/au/app/kepto/id6775776531" target="_blank" rel="noopener">
         <svg class="apple" viewBox="0 0 24 24"><path d="M17.05 12.04c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.89 2.65 3.23 2.6 1.3-.05 1.79-.84 3.36-.84 1.57 0 2.01.84 3.39.81 1.4-.02 2.28-1.27 3.13-2.53.99-1.45 1.4-2.86 1.42-2.93-.03-.01-2.72-1.04-2.75-4.12zM14.7 4.5c.71-.86 1.19-2.06 1.06-3.25-1.02.04-2.26.68-3 1.54-.66.76-1.24 1.98-1.08 3.15 1.14.09 2.3-.58 3.02-1.44z"/></svg>
@@ -121,33 +43,87 @@
           <span class="app-btn-big">App Store</span>
         </span>
       </a>
-      <a class="app-btn" href="https://play.google.com/store/apps/details?id=au.com.retrieverlabs.kepto" target="_blank" rel="noopener">
-        <svg class="apple" viewBox="0 0 24 24"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>
-        <span class="app-btn-text">
-          <span class="app-btn-small">Get it on</span>
-          <span class="app-btn-big">Google Play</span>
-        </span>
-      </a>
     </div>
-    <div class="cta-note">Free · iPhone &amp; Android · App Store and Google Play</div>
+    <p class="lp-cta-note">One-time $7.99. No subscription. No tracking.</p>
+  </section>
+
+  <!-- SMART SCAN -->
+  <section class="lp-feat">
+    <div class="lp-kicker">Smart Scan, powered by Apple Intelligence</div>
+    <h2>Your phone reads the receipt. Nothing leaves it.</h2>
+    <p>On iPhone 15 Pro and newer with Apple Intelligence on, Kepto uses Apple's on-device Foundation Models framework to extract fields from a scanned receipt in seconds. Older iPhones use a local heuristic parser. Either way, the image, the OCR text, and the parsed fields all stay on your device.</p>
+    <p class="lp-emph">100% on device. Nothing is ever sent anywhere.</p>
+  </section>
+
+  <!-- TAX & GST -->
+  <section class="lp-feat">
+    <div class="lp-kicker">Tax and GST tracking</div>
+    <h2>Tax tracked, on every purchase.</h2>
+    <p>Kepto records the tax paid on every receipt, either manually or pre-filled at scan time. The Tax row sits right under Price on the form, so you can see it the moment a scan lands and correct anything that doesn't look right. At tax time, every receipt's GST is already there, ready to export.</p>
+  </section>
+
+  <!-- WARRANTY REMINDERS -->
+  <section class="lp-feat">
+    <div class="lp-kicker">Calm warranty reminders</div>
+    <h2>A gentle nudge before your warranty ends.</h2>
+    <p>Kepto schedules a calm local notification a few weeks before each warranty expires, so you never miss a claim window. No spam, no daily reminders, no marketing. Just a heads-up when it matters.</p>
+  </section>
+
+  <!-- BACKUP & RESTORE -->
+  <section class="lp-feat">
+    <div class="lp-kicker">Backup and restore</div>
+    <h2>Yours forever, on any device.</h2>
+    <p>Export every receipt, every photo, and every custom category to a single file you can save anywhere — iCloud Drive, Files, AirDrop, email. Restore on a new phone in one tap. Free for everyone.</p>
+  </section>
+
+  <!-- PRIVACY FIRST -->
+  <section class="lp-feat">
+    <div class="lp-kicker">Privacy first</div>
+    <h2>Your data never leaves your phone.</h2>
+    <p>No analytics. No advertising SDKs. No tracking. No accounts. No servers. Kepto has nothing to send and nothing to sell.</p>
+    <p>The full privacy policy lives at <a href="privacy/">kepto.com.au/privacy</a>.</p>
+  </section>
+
+  <!-- BUILT TO FEEL LIKE PAPER -->
+  <section class="lp-feat">
+    <div class="lp-kicker">Built to feel like paper, built to last</div>
+    <ul class="lp-list">
+      <li>150+ currencies, with USD, EUR, GBP, AUD, INR, NPR, and JPY pinned at the top</li>
+      <li>Five themes: System, Light, Dark, Slate, and Rose</li>
+      <li>Four paper styles: Clean, Strip, Ticket, and Scallop</li>
+      <li>Service reminders for the things you want to keep on top of</li>
+      <li>Spotlight search and a Home Screen widget</li>
+      <li>PDF, CSV, and date-range exports for insurance and tax</li>
+      <li>Family Sharing on the one-time unlock</li>
+      <li>Made in Sydney by Retriever Labs</li>
+    </ul>
+  </section>
+
+  <!-- PRICING -->
+  <section class="lp-feat">
+    <div class="lp-kicker">Pricing</div>
+    <div class="lp-pricing">
+      <div class="price-card">
+        <div class="price-tier">Free</div>
+        <div class="price-amt">$0</div>
+        <p>File up to 25 receipts. Photo on the first 5. All themes. Warranty reminders. Spotlight search. Manual backup and restore. Tax and GST tracking.</p>
+      </div>
+      <div class="price-card premium">
+        <div class="price-tier">Premium</div>
+        <div class="price-amt">$7.99 once · yours forever</div>
+        <p>Unlimited receipts. Photo on every receipt. PDF and CSV exports of your whole archive. Date-range exports. Service reminders. Advanced stats. Custom categories.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="lp-foot">
+    Kepto by Retriever Labs Pty Ltd<br>
+    Made in Sydney<br>
+    <a href="privacy/">Privacy</a> · <a href="support/">Support</a> · <a href="https://apps.apple.com/au/app/kepto/id6775776531" target="_blank" rel="noopener">App Store</a>
   </div>
 
-  <!-- BARCODE FOOTER -->
-  <div class="barcode reveal"></div>
-  <div class="barcode-num">K E P T O · 2 0 2 6</div>
+</main>
 
-  <div class="foot-thanks">Thank you for keeping what matters</div>
-  <div class="foot-links">
-    <a href="https://retrieverlabs.com.au">Retriever Labs</a>
-    <a href="privacy/">Privacy</a>
-    <a href="support/">Support</a>
-  </div>
-  <div class="foot-dev"><a href="https://retrieverlabs.com.au">Developed by Retriever Labs</a></div>
-  <div class="foot-dev" style="margin-top:6px;">Designed &amp; built in Sydney</div>
-
-  <div class="receipt-bottom"></div>
-</div>
-
-<script src="js/reveal.js"></script>
 </body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download Kepto</title>
+<meta name="description" content="Download Kepto for iPhone, iPad, or Android.">
+<link rel="icon" type="image/png" href="/img/kepto-logo.png">
+<script>
+  (function () {
+    var ua = navigator.userAgent || '';
+    var apple = /iPhone|iPad|iPod/i.test(ua) ||
+      (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+    if (/Android/i.test(ua)) {
+      window.location.replace('https://play.google.com/store/apps/details?id=au.com.retrieverlabs.kepto');
+    } else if (apple) {
+      window.location.replace('https://apps.apple.com/app/kepto/id6775776531');
+    }
+  }());
+</script>
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+<div class="topbar">
+  <a class="tb-home" href="/">
+    <img class="tb-logo" src="/img/kepto-logo.png" alt="Kepto">
+    <span class="tb-name">Kepto</span>
+  </a>
+  <nav class="tb-nav" aria-label="Main navigation">
+    <a href="/">Kepto</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/support/">Support</a>
+  </nav>
+</div>
+<main class="lp">
+  <section class="lp-hero">
+    <img class="lp-logo" src="/img/kepto-logo.png" alt="Kepto">
+    <h1 class="lp-h1">Download Kepto<span class="dot">.</span></h1>
+    <p class="lp-sub">Keep proof of what you bought. Choose your phone’s store below.</p>
+    <div class="store-badges">
+      <a class="app-btn" href="https://apps.apple.com/app/kepto/id6775776531">
+        <span class="app-btn-text">
+          <span class="app-btn-small">Download on the</span>
+          <span class="app-btn-big">App Store</span>
+        </span>
+      </a>
+      <a class="app-btn" href="https://play.google.com/store/apps/details?id=au.com.retrieverlabs.kepto">
+        <span class="app-btn-text">
+          <span class="app-btn-small">Get it on</span>
+          <span class="app-btn-big">Google Play</span>
+        </span>
+      </a>
+    </div>
+    <p class="lp-cta-note">One-time purchase. No subscription. No tracking.</p>
+  </section>
+  <div class="lp-foot"><a href="/">Learn more about Kepto</a></div>
+</main>
+</body>
+</html>

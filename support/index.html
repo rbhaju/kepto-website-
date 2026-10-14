@@ -19,6 +19,7 @@
   <nav class="tb-nav">
     <a href="/">Kepto</a>
     <a href="../privacy/">Privacy</a>
+    <a href="../terms/">Terms</a>
     <a href="./" class="active">Support</a>
   </nav>
 </div>
@@ -71,7 +72,7 @@
     </form>
 
     <div class="form-thanks" id="formThanks" style="display:none;text-align:center;padding:6px 0;">
-      <p class="lead" style="margin:0;"><strong>Thanks — your message is on its way.</strong><br>We read every message and typically reply within a few days.</p>
+      <p class="lead" style="margin:0;"><strong>Thanks, your message is on its way.</strong><br>We read every message and typically reply within a few days.</p>
     </div>
 
     <div class="sub">Typical reply time: a few days.<br>Kepto runs on iPhone and Android.</div>
@@ -81,53 +82,70 @@
     <h2>Common questions</h2>
 
     <p class="faq-q">Is my data private?</p>
-    <p>Yes. Kepto has no account, no ads, and no tracking, and there are no Retriever Labs servers that ever receive your data. Your receipts and records are processed and stored on your device.</p>
+    <p>Yes. Kepto has no account, no ads, and no tracking, and no Retriever Labs servers ever receive your data. Your receipts, photos, and documents are processed and stored on your device.</p>
 
     <p class="faq-q">Where is my data stored?</p>
     <p>On your device. We never hold a copy.</p>
     <span class="plat">On iPhone</span>
-    <p>iCloud Sync is on by default, so your data is also kept in your own private iCloud account. You can turn it off in Settings &rarr; Sync &amp; Backup.</p>
+    <p>iCloud Sync is on by default, so your data is also kept in your own private iCloud. You can turn it off in Settings &rarr; Sync &amp; Backup.</p>
     <span class="plat">On Android</span>
-    <p>If you turn on Back up to Google in Settings (off by default), your data is backed up to your own Google account.</p>
+    <p>Back up to Google is on by default, so your data is also backed up to your own Google account. You can turn it off in Settings &rarr; Backup.</p>
 
     <p class="faq-q">Will my receipts sync to my other devices?</p>
     <span class="plat">On iPhone</span>
-    <p>Yes. With iCloud Sync on, items sync across the Apple devices signed into the same Apple ID, directly through Apple.</p>
+    <p>Yes. With iCloud Sync on, items and receipt photos sync across the iPhones and iPads signed into the same Apple ID, directly through Apple. Settings &rarr; Sync &amp; Backup shows when Kepto last synced, or what's wrong if it can't.</p>
     <span class="plat">On Android</span>
-    <p>Android uses backup-and-restore rather than continuous sync. Your data is restored when you reinstall Kepto or set up a new device with Back up to Google enabled.</p>
+    <p>Android uses backup and restore rather than continuous sync. Your data comes back when you reinstall Kepto or set up a new phone with the same Google account.</p>
 
     <p class="faq-q">I got a new phone, or reinstalled the app. Will my data come back?</p>
     <span class="plat">On iPhone</span>
-    <p>Yes, if iCloud Sync was on — sign into the same Apple ID and your cabinet returns.</p>
+    <p>Yes, if iCloud Sync was on. Sign into the same Apple ID and your receipts return.</p>
     <span class="plat">On Android</span>
-    <p>Yes, if Back up to Google was on — sign into the same Google account during setup.</p>
-    <p>If neither was turned on, your data lived only on the old device and can't be recovered, because we never had a copy.</p>
+    <p>Yes, if Back up to Google was on. Sign into the same Google account during setup. Google limits each app's backup size, so if you have a lot of receipt photos, the newest ones are kept. For a complete copy, use the manual backup in Settings.</p>
+    <p>If neither was on, your data lived only on the old device and can't be recovered, because we never had a copy. Vault documents are never restored on a new device; see the vault question below.</p>
+
+    <p class="faq-q">Some items showed twice after I updated. What happened?</p>
+    <p>If you moved your data between devices with a backup file while iCloud Sync wasn't working, each device had its own copy. Kepto now spots copies of the same item and removes the extras automatically after it syncs, keeping the same copy on every device.</p>
+
+    <p class="faq-q">What is the Document Vault, and can I get my documents back?</p>
+    <p>The vault keeps scans of passports, licences, IDs, and similar documents encrypted on your phone, behind Face ID, Touch ID, your fingerprint, or your screen lock. The encryption key never leaves that phone and is never backed up, so:</p>
+    <ul>
+      <li>Vault documents stay on the device that scanned them. They don't appear on your other devices, even with iCloud Sync on.</li>
+      <li>If you lose, reset, or replace your phone, or delete Kepto, the documents in the vault can't be recovered, by you or by us. Keep your own copy of anything important; you can export any document from the vault.</li>
+    </ul>
+
+    <p class="faq-q">I forgot my App Lock PIN.</p>
+    <span class="plat">On iPhone</span>
+    <p>Use Face ID or Touch ID, or tap it and enter your iPhone passcode instead. Once you're in, you can set a new PIN in Settings &rarr; Privacy &amp; Security. After five wrong PINs in a row, PIN entry pauses for a while; Face ID and your passcode still work.</p>
+    <span class="plat">On Android</span>
+    <p>App Lock uses your phone's own fingerprint, face, or screen lock, so there's no separate PIN to forget.</p>
+    <p>App Lock and the vault need a passcode or screen lock on your device. If you remove it, Kepto stays locked until you set one again.</p>
 
     <p class="faq-q">Does Kepto need the internet?</p>
-    <p>No. Scanning, parsing, reminders, and everything else run on your device, so Kepto works fully offline. On Android the app doesn't even request internet permission.</p>
+    <p>No. Scanning, parsing, reminders, and everything else run on your device, so Kepto works fully offline. On iPhone, iCloud Sync uses your connection when it's available. On Android the app requests no internet permission at all.</p>
 
     <p class="faq-q">How does receipt scanning work?</p>
-    <p>You snap a receipt and Kepto reads the item, store, date, and price — entirely on your phone. The image never leaves your device.</p>
+    <p>You snap a receipt and Kepto reads the item, store, date, and price, entirely on your phone. The image never leaves your device.</p>
     <span class="plat">On iPhone</span>
-    <p>Apple's Vision framework handles the text, and on supported devices with Apple Intelligence, Apple's on-device Foundation Models extract the details.</p>
+    <p>Apple's Vision framework reads the text, and on supported devices with Apple Intelligence, Apple's on-device Foundation Models extract the details.</p>
     <span class="plat">On Android</span>
-    <p>Google's ML Kit handles the text, and on supported devices Google AI Edge extracts the details.</p>
+    <p>Google's ML Kit reads the text, and on supported devices Google AI Edge extracts the details.</p>
 
-    <p class="faq-q">What does Kepto Premium include, and how do I restore it?</p>
-    <p>Premium is a one-time purchase that unlocks unlimited items, PDF and CSV exports, and more. You can restore a previous purchase any time from the upgrade screen.</p>
+    <p class="faq-q">What does Kepto+ include, and how do I restore it?</p>
+    <p>Kepto+ is a one-time purchase, not a subscription. It unlocks unlimited items, a photo on every receipt, unlimited vault documents, PDF and CSV exports, service reminders, custom categories, and advanced stats. Restore a previous purchase any time from the upgrade screen.</p>
     <span class="plat">On iPhone</span>
-    <p>Handled by Apple's StoreKit.</p>
+    <p>Handled by Apple's App Store.</p>
     <span class="plat">On Android</span>
     <p>Handled by Google Play Billing.</p>
 
     <p class="faq-q">How do I export my data?</p>
-    <p>Use Export in Settings to create a PDF or CSV of your items and share it wherever you like — AirDrop, email, Files, or Drive. The choice of where it goes is yours.</p>
+    <p>Use Export in Settings to create a PDF or CSV of your items and share it wherever you like: AirDrop, email, Files, or Drive. For a full backup you can restore later, use the backup file option in the same place.</p>
 
     <p class="faq-q">I found a bug or have a suggestion.</p>
-    <p>We'd love to hear it. Use the form above and, if you're reporting a bug, please include your device and OS version so we can help quickly.</p>
+    <p>We'd love to hear it. Use the form above and, if you're reporting a bug, include your device and OS version so we can help quickly.</p>
   </div>
 
-  <div class="lp-foot">© 2026 Retriever Labs Pty Ltd · Made in Sydney</div>
+  <div class="lp-foot">© 2026 Retriever Labs Pty Ltd · Made in Sydney<br><a href="../privacy/">Privacy</a> · <a href="../terms/">Terms</a></div>
 </main>
 
 <script>

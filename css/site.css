@@ -54,8 +54,10 @@ a:hover{color:var(--ink);}
 }
 
 /* ---- Store buttons ---- */
-.stores{display:flex;gap:12px;flex-wrap:wrap;}
-.store{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;transition:transform 160ms,box-shadow 160ms;}
+/* equal columns, so both buttons take the width of the wider one */
+.stores{display:inline-grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(max-width:600px){.stores{display:grid;grid-template-columns:1fr;}}
+.store{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;transition:transform 160ms,box-shadow 160ms;}
 .store svg{width:20px;height:20px;flex-shrink:0;}
 .store.dark{background:var(--ink);color:#fff;}
 .store.dark svg{fill:#fff;}

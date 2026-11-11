@@ -80,6 +80,9 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-0.025em;text-wrap:balance;}
 }
 .note{margin-top:18px;font-size:15px;color:var(--ink-2);}
 .note a{color:var(--ink);text-underline-offset:3px;}
+.rank{margin-top:18px;font-size:15px;color:var(--ink-2);}
+.rank b{color:var(--ink);font-weight:700;}
+.rank + .note{margin-top:6px;}
 
 /* ---- Shared section furniture ---- */
 .section{padding:96px 0;}

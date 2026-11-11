@@ -261,14 +261,12 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-0.025em;text-wrap:balance;}
 .night-art{position:relative;display:flex;justify-content:center;align-self:end;height:540px;}
 .night-art::before{content:'';position:absolute;left:50%;top:60px;width:480px;height:480px;margin-left:-240px;border-radius:50%;background:#3A2F12;}
 .night-art .phone{--pw:290px;position:relative;border-color:#000;background:#000;box-shadow:none;align-self:flex-start;}
-.night-art .lock{position:absolute;z-index:2;left:50%;margin-left:-230px;top:160px;height:120px;width:auto;transform:rotate(-8deg);filter:drop-shadow(0 18px 18px rgba(0,0,0,0.5));}
 @media(max-width:900px){
   .night .wrap{grid-template-columns:minmax(0,1fr);gap:8px;}
   .night-copy{padding-bottom:40px;}
   .night-art{height:460px;}
   .night-art .phone{--pw:250px;}
   .night-art::before{width:380px;height:380px;margin-left:-190px;}
-  .night-art .lock{margin-left:-180px;height:96px;}
 }
 
 /* ---- Home: pricing ---- */
@@ -344,6 +342,27 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-0.025em;text-wrap:balance;}
 .lp-prose .plat{display:inline-block;margin:18px 0 0;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber-deep);}
 .lp-prose .plat + p,.lp-prose .plat + ul{margin-top:4px;}
 .lp-prose .lp-note{font-size:14.5px;color:var(--ink-2);background:var(--band);border:1px solid var(--band-line);border-radius:16px;padding:16px 18px;margin-top:28px;}
+
+/* ---- Privacy and terms: text beside a contents card ---- */
+.doc.legal{max-width:var(--max);display:grid;grid-template-columns:minmax(0,1fr) 320px;grid-template-areas:"head head" "body side";column-gap:64px;align-items:start;}
+.legal .lp-dochead{grid-area:head;border-bottom:0;padding-bottom:12px;}
+.legal .lp-prose{grid-area:body;padding-top:16px;}
+.legal .lp-prose h2{scroll-margin-top:24px;}
+.summary{position:relative;background:var(--amber-soft);border:var(--line) solid var(--ink);border-radius:var(--radius);padding:36px 28px 22px;margin:34px 0 8px;}
+.summary > .tab{position:absolute;top:-14px;left:20px;background:var(--surface);}
+.lp-prose .summary li{color:var(--ink);margin:8px 0;}
+.lp-prose .summary li::marker{color:var(--ink);}
+.lp-prose .summary .summary-note{font-size:14px;color:#5A4A1C;margin:14px 0 0;}
+.toc{grid-area:side;position:sticky;top:20px;background:var(--surface);border:var(--line) solid var(--ink);border-radius:var(--radius);padding:30px 24px 20px;margin-top:30px;}
+.toc > .tab{position:absolute;top:-14px;left:20px;background:var(--surface);}
+.toc ol{padding-left:22px;font-size:15px;}
+.toc li{margin:9px 0;color:var(--ink-2);}
+.toc a{color:var(--ink);text-underline-offset:3px;text-decoration-color:var(--ink-3);}
+.toc a:hover{text-decoration-color:var(--ink);}
+@media(max-width:900px){
+  .doc.legal{grid-template-columns:minmax(0,1fr);grid-template-areas:"head" "body";}
+  .toc{display:none;}
+}
 
 /* ---- Support: questions beside the contact card ---- */
 .doc.support{max-width:var(--max);display:grid;grid-template-columns:minmax(0,1fr) 400px;grid-template-areas:"head head" "faq contact";column-gap:56px;align-items:start;}

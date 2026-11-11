@@ -1,0 +1,37 @@
+# Kepto
+
+> Kepto is a privacy-first receipt, warranty, bill and document tracker for iPhone, iPad and Android. You scan a receipt, Kepto reads the details on the device and reminds you before the warranty ends. There is no account, no tracking and no server: everything is processed and stored on the user's own phone.
+
+Kepto is made by Retriever Labs Pvt. Ltd. The website is https://kepto.com.au.
+
+## Key facts
+
+- Platforms: iPhone and iPad (iOS 17 or later) and Android.
+- Price: free to start. Kepto+ is a one-time purchase, not a subscription. The local price is shown in the App Store and Google Play.
+- Free plan: up to 25 receipts, a photo on the first 5, one vault document, one tracked subscription, all themes, warranty reminders, sync, backup and restore, and tax and GST tracking.
+- Kepto+: unlimited receipts, a photo on every receipt, unlimited vault documents, unlimited subscription tracking, PDF and CSV exports with date ranges, service reminders, advanced stats and custom categories.
+- Privacy: no account, no ads, no analytics, no tracking, and no Retriever Labs servers. The Android app requests no internet permission.
+- Scanning: runs entirely on the device. On iPhone it uses Apple's Vision text recognition and, on supported devices, Apple's on-device Foundation Models. On Android it uses Google's ML Kit and, on supported devices, Google AI Edge.
+- Warranty length: Kepto does not look anything up online. It fills in a typical warranty for the item's category, which the user can change.
+- Sync and backup: on iPhone, iCloud Sync through the user's own private iCloud. On Android, backup and restore through the user's own Google account. Any user can also export a full backup file.
+- Document Vault: scans of passports, licences and IDs are encrypted on the phone with a key that never leaves it, and open only with Face ID, Touch ID, a fingerprint or the screen lock. Vault documents are never synced or backed up, so they cannot be recovered if the phone is lost.
+- Also included: bills and subscriptions with renewal reminders, tax and GST on every receipt, 150+ currencies, six themes and four paper styles.
+
+## Pages
+
+- [Home](https://kepto.com.au/): what Kepto does, how it works and pricing
+- [Support](https://kepto.com.au/support/): common questions about privacy, sync and backup, the vault, App Lock, promo codes, Kepto+ and tax, plus a contact form
+- [Privacy Policy](https://kepto.com.au/privacy/): what data is collected (none) and where data is stored
+- [Terms of Use](https://kepto.com.au/terms/): the terms for using the app
+- [Delete your data](https://kepto.com.au/delete-data/): how to remove Kepto data from a phone and from the user's own iCloud or Google backup; there is no account to delete
+- [Download](https://kepto.com.au/download/): sends a phone to the right store
+
+## Get the app
+
+- [App Store](https://apps.apple.com/au/app/kepto/id6775776531): iPhone and iPad
+- [Google Play](https://play.google.com/store/apps/details?id=au.com.retrieverlabs.kepto): Android
+
+## Contact
+
+- Email: hello@retrieverlabs.net
+- Company: Retriever Labs Pvt. Ltd., Bhaktapur Municipality-2, Itachhen, Bhaktapur, Bagmati Province, Nepal

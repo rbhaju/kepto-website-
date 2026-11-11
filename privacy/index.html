@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap">
-<link rel="stylesheet" href="../css/site.css?v=8">
+<link rel="stylesheet" href="../css/site.css?v=9">
 </head>
 <body>
 
@@ -44,7 +44,7 @@
   </nav>
 </header>
 
-<main class="doc">
+<main class="doc legal">
   <div class="lp-dochead">
     <img class="lp-logo" src="../img/kepto-logo-sm.png" alt="Kepto">
     <div class="lp-eyebrow">Privacy Policy</div>
@@ -54,14 +54,25 @@
 
   <div class="lp-prose">
     <p>Kepto is a <strong>privacy-first warranty and receipt tracker.</strong> We built it so that nothing about you, your receipts, your documents, or your purchases is ever sent to us, on iPhone or on Android. Your data lives on your device and only goes where you send it: your own iCloud or Google account if you keep sync or backup on, or a file you choose to share.</p>
+    <section class="summary" aria-label="The short version">
+      <span class="tab">The short version</span>
+      <ul>
+        <li>We collect nothing. Kepto has no analytics, ads, tracking, accounts or servers of ours.</li>
+        <li>Your receipts, photos and documents stay on your device. Sync and backup go only to your own iCloud or Google account, and you can turn them off.</li>
+        <li>Receipt scanning and AI parsing run entirely on your phone.</li>
+        <li>Vault documents are encrypted on your device and never synced or backed up, so they can't be recovered if you lose the phone.</li>
+        <li>Purchases are handled by Apple or Google. We never see your payment details.</li>
+      </ul>
+      <p class="summary-note">A summary for convenience. The full text below is what applies.</p>
+    </section>
 
-    <h2>Data we collect</h2>
+    <h2 id="data-we-collect">Data we collect</h2>
     <span class="plat">On iPhone</span>
     <p><strong>None.</strong> Kepto has no analytics, advertising, crash reporting, or tracking SDKs. We have no servers that receive data from the app, and there are no accounts; the app works without you identifying yourself.</p>
     <span class="plat">On Android</span>
     <p><strong>None.</strong> The same applies. The Android app also requests no internet permission, so it cannot send anything off your device by itself.</p>
 
-    <h2>Where your data is stored</h2>
+    <h2 id="where-your-data-is-stored">Where your data is stored</h2>
     <span class="plat">On iPhone</span>
     <ul>
       <li>Your receipts, photos, warranty records, subscriptions, and settings are stored on your device.</li>
@@ -75,10 +86,10 @@
       <li>Google's privacy terms apply to that backup. Retriever Labs has no access to it.</li>
     </ul>
 
-    <h2>Manual backup files</h2>
+    <h2 id="manual-backup-files">Manual backup files</h2>
     <p>You can export every receipt, every photo, every subscription, and every custom category to a single <code>.json</code> file from Settings. You choose where it goes: Files, iCloud Drive, Google Drive, email, AirDrop, or anywhere else your phone lets you share. Retriever Labs never sees the file. Restoring from a file merges by ID and never overwrites what is already on your device. Vault documents are not included in this file.</p>
 
-    <h2>On-device AI receipt parsing</h2>
+    <h2 id="on-device-ai-receipt-parsing">On-device AI receipt parsing</h2>
     <span class="plat">On iPhone</span>
     <ul>
       <li>On iPhone 15 Pro and newer (and Apple silicon iPads), with Apple Intelligence turned on, Kepto uses Apple's on-device Foundation Models framework to read the fields on your receipt.</li>
@@ -91,13 +102,13 @@
       <li>Either way, the image, the recognised text, and the extracted fields stay on your device.</li>
     </ul>
 
-    <h2>On-device receipt text recognition</h2>
+    <h2 id="on-device-receipt-text-recognition">On-device receipt text recognition</h2>
     <span class="plat">On iPhone</span>
     <p>Receipt photos are read on your device by Apple's Vision framework. The image never leaves your phone.</p>
     <span class="plat">On Android</span>
     <p>Receipt photos are read on your device by Google's ML Kit Text Recognition, using a model built into the app. The image never leaves your phone.</p>
 
-    <h2>Document Vault</h2>
+    <h2 id="document-vault">Document Vault</h2>
     <p>The optional Document Vault keeps scans of personal documents such as passports, driver licences, ID cards, and insurance or health cards inside Kepto, on iPhone and on Android.</p>
     <ul>
       <li><strong>Encrypted on your device.</strong> Each page is encrypted on your device with AES-256. The key is created on the device and kept in the iOS Keychain for this device only (iPhone) or in the Android Keystore (Android). It never leaves the device and is not part of any backup.</li>
@@ -108,7 +119,7 @@
       <li><strong>Exporting.</strong> You can export a document as a JPEG or PDF through the share sheet. That copy leaves Kepto's encryption and is handled by wherever you send it. On iPhone, Kepto deletes its own temporary copy once sharing finishes.</li>
     </ul>
 
-    <h2>App Lock and biometrics</h2>
+    <h2 id="app-lock-and-biometrics">App Lock and biometrics</h2>
     <span class="plat">On iPhone</span>
     <ul>
       <li>App Lock uses a PIN you set, with Face ID or Touch ID as a shortcut. The PIN is stored only as a salted hash in the iOS Keychain, never as plain text.</li>
@@ -120,7 +131,7 @@
     </ul>
     <p>On both platforms, biometrics are handled by the operating system. Kepto only receives a yes or no answer and never sees or stores your biometric data. If your device has no passcode or screen lock, App Lock and the vault stay locked until you set one.</p>
 
-    <h2>Permissions we request</h2>
+    <h2 id="permissions-we-request">Permissions we request</h2>
     <span class="plat">On iPhone</span>
     <ul>
       <li><strong>Camera:</strong> only when you scan a receipt or a vault document.</li>
@@ -137,13 +148,13 @@
       <li>Kepto requests <strong>no internet permission</strong>.</li>
     </ul>
 
-    <h2>In-app purchases</h2>
+    <h2 id="in-app-purchases">In-app purchases</h2>
     <span class="plat">On iPhone</span>
     <p>The Kepto+ one-time unlock is handled by Apple's App Store (StoreKit). Apple tells Kepto only whether you own it, with a transaction ID. Retriever Labs never sees your Apple ID, payment method, or location.</p>
     <span class="plat">On Android</span>
     <p>The Kepto+ one-time unlock is handled by Google Play Billing. Google tells Kepto only whether you own it, with an order ID. Retriever Labs never sees your Google account, payment method, or location.</p>
 
-    <h2>Apple and Google components</h2>
+    <h2 id="apple-and-google-components">Apple and Google components</h2>
     <p>Kepto uses no third-party SDKs beyond the platform components below, and none of them sends your receipts, photos, or documents anywhere.</p>
     <ul>
       <li><strong>iPhone:</strong> Apple's Vision, VisionKit (document scanner), Foundation Models, CryptoKit, Local Authentication, StoreKit, and CloudKit (for iCloud Sync, when it is on).</li>
@@ -151,17 +162,36 @@
     </ul>
     <p class="lp-note">Android versions released before October 2026 also allowed Google's ML Kit to send anonymous usage metrics about text recognition to Google. These never included receipt images or text. Current versions request no internet permission, so this no longer happens.</p>
 
-    <h2>Children</h2>
+    <h2 id="children">Children</h2>
     <p>Kepto is not directed at children under 13 and does not knowingly collect data from anyone.</p>
 
-    <h2>Changes to this policy</h2>
+    <h2 id="changes-to-this-policy">Changes to this policy</h2>
     <p>We will update this page if anything changes, and move the effective date at the top.</p>
 
-    <h2>Contact</h2>
+    <h2 id="contact">Contact</h2>
     <p>For questions or to exercise your data rights, <a href="../support/">contact us via kepto.com.au/support</a>.</p>
 
     <p class="lp-note">This document describes how Kepto handles your information. It is provided for transparency and is not legal advice.</p>
   </div>
+
+  <nav class="toc" aria-label="Contents">
+    <span class="tab">Contents</span>
+    <ol>
+      <li><a href="#data-we-collect">Data we collect</a></li>
+      <li><a href="#where-your-data-is-stored">Where your data is stored</a></li>
+      <li><a href="#manual-backup-files">Manual backup files</a></li>
+      <li><a href="#on-device-ai-receipt-parsing">On-device AI receipt parsing</a></li>
+      <li><a href="#on-device-receipt-text-recognition">On-device receipt text recognition</a></li>
+      <li><a href="#document-vault">Document Vault</a></li>
+      <li><a href="#app-lock-and-biometrics">App Lock and biometrics</a></li>
+      <li><a href="#permissions-we-request">Permissions we request</a></li>
+      <li><a href="#in-app-purchases">In-app purchases</a></li>
+      <li><a href="#apple-and-google-components">Apple and Google components</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#changes-to-this-policy">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
 
 </main>
 
@@ -170,7 +200,7 @@
     <div class="foot-brand"><img src="../img/kepto-logo-sm.png" alt="">Kepto</div>
     <div class="lp-foot">© 2026 Retriever Labs Pvt. Ltd. · Registered at the Office of the Company Registrar, Nepal, OCR reg. no. 399717/83/84 · PAN 623700901<br>Bhaktapur Municipality-2, Itachhen, Bhaktapur, Bagmati Province, Nepal<br>Complaints: Rohan Bhaju (Director), +977 9845081875, <a href="mailto:hello@retrieverlabs.net">hello@retrieverlabs.net</a></div>
     <div class="foot-links">
-      <a href="/">Learn more about Kepto</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a>
+      <a href="/">Learn more about Kepto</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../delete-data/">Delete your data</a>
     </div>
   </div>
 </footer>

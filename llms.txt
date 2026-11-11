@@ -6,7 +6,7 @@ Kepto is made by Retriever Labs Pvt. Ltd. The website is https://kepto.com.au.
 
 ## Key facts
 
-- Platforms: iPhone and iPad (iOS 17 or later) and Android.
+- Platforms: iPhone and iPad (iOS 17.6 or later) and Android.
 - Price: free to start. Kepto+ is a one-time purchase, not a subscription. The local price is shown in the App Store and Google Play.
 - Free plan: up to 25 receipts, a photo on the first 5, one vault document, one tracked subscription, all themes, warranty reminders, sync, backup and restore, and tax and GST tracking.
 - Kepto+: unlimited receipts, a photo on every receipt, unlimited vault documents, unlimited subscription tracking, PDF and CSV exports with date ranges, service reminders, advanced stats and custom categories.

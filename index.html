@@ -31,8 +31,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap">
-<link rel="preload" as="image" href="img/app-home.webp" fetchpriority="high">
-<link rel="stylesheet" href="css/site.css?v=9">
+<link rel="preload" as="image" href="img/app-home.webp" imagesrcset="img/app-home.webp 600w, img/app-home-900.webp 900w" imagesizes="(max-width: 600px) 220px, 280px" fetchpriority="high">
+<link rel="stylesheet" href="css/site.css?v=12">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -71,10 +71,6 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-copy">
-      <div class="badges">
-        <span class="badge"><b>No account</b> needed</span>
-        <span class="badge"><b>Works</b> offline</span>
-      </div>
       <h1>Keep proof of what you <mark>bought</mark><span class="dot">.</span></h1>
       <p class="hero-sub">Every receipt, warranty, bill and important document in one place, kept on your phone.</p>
       <div class="stores">
@@ -92,8 +88,8 @@
 
     <div class="hero-art">
       <span class="tag one">7 covered, 1 expiring soon</span>
-      <div class="phone back"><img src="img/app-items.webp" width="598" height="1300" alt="Kepto's list of receipts, each with its warranty end date and years left"></div>
-      <div class="phone front"><img src="img/app-home.webp" width="598" height="1300" fetchpriority="high" alt="Kepto on iPhone: the home screen with receipts, warranties, the document vault, and bills and subscriptions"></div>
+      <div class="phone back"><img src="img/app-items.webp" srcset="img/app-items.webp 600w, img/app-items-900.webp 900w" sizes="(max-width: 600px) 220px, 280px" width="600" height="1304" alt="Kepto's list of receipts, each with its warranty end date and years left"></div>
+      <div class="phone front"><img src="img/app-home.webp" srcset="img/app-home.webp 600w, img/app-home-900.webp 900w" sizes="(max-width: 600px) 220px, 280px" width="600" height="1304" fetchpriority="high" alt="Kepto on iPhone: the home screen with receipts, warranties, the document vault, and bills and subscriptions"></div>
       <span class="tag two">4.9 years left</span>
     </div>
   </section>
@@ -153,6 +149,22 @@
         <div class="keep" aria-hidden="true"><img src="img/item-headphones.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Headphones</b><span class="stamp">Covered</span><small><strong>1.1</strong> years left</small></div>
         <div class="keep" aria-hidden="true"><img src="img/item-fridge.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Fridge</b><span class="stamp">Covered</span><small><strong>3.5</strong> years left</small></div>
         <div class="keep" aria-hidden="true"><img src="img/item-camera.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Camera</b><span class="stamp">Covered</span><small><strong>1.9</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-coffee.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Espresso machine</b><span class="stamp">Covered</span><small><strong>2.0</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-washer.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Washing machine</b><span class="stamp">Covered</span><small><strong>4.9</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-watch.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Smart watch</b><span class="stamp">Covered</span><small><strong>1.4</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-tv.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Television</b><span class="stamp">Covered</span><small><strong>2.7</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-laptop.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Laptop</b><span class="stamp">Covered</span><small><strong>0.8</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-headphones.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Headphones</b><span class="stamp">Covered</span><small><strong>1.1</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-fridge.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Fridge</b><span class="stamp">Covered</span><small><strong>3.5</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-camera.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Camera</b><span class="stamp">Covered</span><small><strong>1.9</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-coffee.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Espresso machine</b><span class="stamp">Covered</span><small><strong>2.0</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-washer.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Washing machine</b><span class="stamp">Covered</span><small><strong>4.9</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-watch.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Smart watch</b><span class="stamp">Covered</span><small><strong>1.4</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-tv.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Television</b><span class="stamp">Covered</span><small><strong>2.7</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-laptop.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Laptop</b><span class="stamp">Covered</span><small><strong>0.8</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-headphones.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Headphones</b><span class="stamp">Covered</span><small><strong>1.1</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-fridge.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Fridge</b><span class="stamp">Covered</span><small><strong>3.5</strong> years left</small></div>
+        <div class="keep" aria-hidden="true"><img src="img/item-camera.webp" width="400" height="400" loading="lazy" decoding="async" alt=""><b>Camera</b><span class="stamp">Covered</span><small><strong>1.9</strong> years left</small></div>
       </div>
     </div>
   </section>
@@ -196,7 +208,7 @@
             <h3>Snap the receipt.</h3>
             <p>Scan it, or pick a photo or PDF. Kepto reads it on your phone and can tell a receipt from a bill.</p>
           </div>
-          <div class="step-shot"><div class="phone"><img src="img/app-detect.webp" width="598" height="1300" loading="lazy" alt="Kepto recognising a scanned electricity bill and offering to track it"></div></div>
+          <div class="step-shot"><div class="phone"><img src="img/app-detect.webp" srcset="img/app-detect.webp 600w, img/app-detect-900.webp 900w" sizes="(max-width: 600px) 220px, 280px" width="600" height="1304" loading="lazy" alt="Kepto recognising a scanned electricity bill and offering to track it"></div></div>
         </article>
         <article class="card step reveal">
           <span class="step-n">2</span>
@@ -204,7 +216,7 @@
             <h3>Check the details.</h3>
             <p>Store, price, tax, purchase date and warranty length are filled in for you. Fix anything that looks off.</p>
           </div>
-          <div class="step-shot"><div class="phone"><img src="img/app-detail.webp" width="598" height="1300" loading="lazy" alt="A saved receipt for an espresso machine with price, dates and warranty length"></div></div>
+          <div class="step-shot"><div class="phone"><img src="img/app-detail.webp" srcset="img/app-detail.webp 600w, img/app-detail-900.webp 900w" sizes="(max-width: 600px) 220px, 280px" width="600" height="1304" loading="lazy" alt="A saved receipt for an espresso machine with price, dates and warranty length"></div></div>
         </article>
         <article class="card step reveal">
           <span class="step-n">3</span>
@@ -212,7 +224,7 @@
             <h3>Forget about it.</h3>
             <p>Kepto counts the days and sends one calm reminder a few weeks before each warranty ends.</p>
           </div>
-          <div class="step-shot"><div class="phone"><img src="img/app-items.webp" width="598" height="1300" loading="lazy" alt="Receipts grouped by month, each showing the years of warranty left"></div></div>
+          <div class="step-shot"><div class="phone"><img src="img/app-items.webp" srcset="img/app-items.webp 600w, img/app-items-900.webp 900w" sizes="(max-width: 600px) 220px, 280px" width="600" height="1304" loading="lazy" alt="Receipts grouped by month, each showing the years of warranty left"></div></div>
         </article>
       </div>
     </div>
@@ -230,25 +242,25 @@
           <span class="tab">Home</span>
           <h3>Everything at a glance<span class="dot">.</span></h3>
           <p>What you own, what's covered and what's expiring soon.</p>
-          <div class="phone"><img src="img/app-home.webp" width="598" height="1300" loading="lazy" alt="Kepto home screen with collection value and recent receipts"></div>
+          <div class="phone"><img src="img/app-home.webp" srcset="img/app-home.webp 600w, img/app-home-900.webp 900w" sizes="(max-width: 600px) 220px, 280px" width="600" height="1304" loading="lazy" alt="Kepto home screen with collection value and recent receipts"></div>
         </article>
         <article class="tour-card sky reveal">
           <span class="tab">Bills</span>
           <h3>Bills and subscriptions, counted<span class="dot">.</span></h3>
           <p>See what renews next and what it all costs a month.</p>
-          <div class="phone"><img src="img/app-bills.webp" width="598" height="1300" loading="lazy" alt="Bills and subscriptions with renewal dates and monthly totals"></div>
+          <div class="phone"><img src="img/app-bills.webp" srcset="img/app-bills.webp 600w, img/app-bills-900.webp 900w" sizes="(max-width: 600px) 220px, 280px" width="600" height="1304" loading="lazy" alt="Bills and subscriptions with renewal dates and monthly totals"></div>
         </article>
         <article class="tour-card rose reveal">
           <span class="tab">Stats</span>
           <h3>Know where you stand<span class="dot">.</span></h3>
           <p>Cover at a glance, and spending by the month and year.</p>
-          <div class="phone"><img src="img/app-stats.webp" width="598" height="1300" loading="lazy" alt="Stats screen showing 70 percent of items covered and yearly bill totals"></div>
+          <div class="phone"><img src="img/app-stats.webp" srcset="img/app-stats.webp 600w, img/app-stats-900.webp 900w" sizes="(max-width: 600px) 220px, 280px" width="600" height="1304" loading="lazy" alt="Stats screen showing 70 percent of items covered and yearly bill totals"></div>
         </article>
         <article class="tour-card mint reveal">
           <span class="tab">Receipts</span>
           <h3>Proof, ready to share<span class="dot">.</span></h3>
           <p>Every detail on one page, for a claim, a return or tax time.</p>
-          <div class="phone"><img src="img/app-detail.webp" width="598" height="1300" loading="lazy" alt="Receipt detail with a share receipt button"></div>
+          <div class="phone"><img src="img/app-detail.webp" srcset="img/app-detail.webp 600w, img/app-detail-900.webp 900w" sizes="(max-width: 600px) 220px, 280px" width="600" height="1304" loading="lazy" alt="Receipt detail with a share receipt button"></div>
         </article>
       </div>
     </div>
@@ -268,7 +280,7 @@
         </ul>
       </div>
       <div class="night-art">
-        <div class="phone"><img src="img/app-vault.webp" width="598" height="1300" loading="lazy" alt="The Kepto vault with car registration, health card, driver licence and passport, each marked encrypted"></div>
+        <div class="phone"><img src="img/app-vault.webp" srcset="img/app-vault.webp 600w, img/app-vault-900.webp 900w" sizes="(max-width: 600px) 220px, 280px" width="600" height="1304" loading="lazy" alt="The Kepto vault with car registration, health card, driver licence and passport, each marked encrypted"></div>
       </div>
     </div>
   </section>

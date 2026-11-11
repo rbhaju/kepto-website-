@@ -94,7 +94,7 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-0.025em;text-wrap:balance;}
 
 /* phone: thin ink outline, real capture inside */
 .phone{--pw:240px;width:var(--pw);max-width:100%;flex-shrink:0;background:var(--surface);border:2.5px solid var(--ink);border-radius:calc(var(--pw) * 0.15);padding:calc(var(--pw) * 0.022);box-shadow:0 34px 50px -26px rgba(28,26,21,0.5);}
-.phone img{display:block;width:100%;height:auto;border-radius:calc(var(--pw) * 0.125);background:var(--band);}
+.phone img{display:block;width:100%;height:auto;border-radius:calc(var(--pw) * 0.128 - 2.5px);background:var(--band);}
 
 /* scroll reveal, only when the script is running */
 .js .reveal{opacity:0;translate:0 14px;transition:opacity 400ms ease,translate 400ms cubic-bezier(0.16,1,0.3,1);}
@@ -106,9 +106,6 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-0.025em;text-wrap:balance;}
 
 /* ---- Home: hero ---- */
 .hero{max-width:var(--max);margin:0 auto;padding:32px var(--gutter) 88px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);gap:40px;align-items:center;}
-.badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;}
-.badge{font-size:15px;font-weight:500;line-height:1;color:var(--ink-2);background:var(--surface);border:var(--line) solid var(--ink);border-radius:999px;padding:8px 14px;}
-.badge b{color:var(--ink);font-weight:700;}
 .hero h1{font-weight:700;font-size:clamp(42px,5.4vw,62px);line-height:1.12;max-width:15ch;}
 .hero h1 mark{color:inherit;background:linear-gradient(transparent 62%,var(--amber-soft) 62%,var(--amber-soft) 94%,transparent 94%);padding:0 4px;margin:0 -4px;}
 .hero-sub{margin:22px 0 28px;font-size:20px;line-height:1.6;color:var(--ink-2);max-width:32ch;}
@@ -121,7 +118,7 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-0.025em;text-wrap:balance;}
 .tag.one{left:6%;top:26px;background:var(--amber-soft);transform:rotate(-5deg);}
 .tag.two{right:0;bottom:92px;background:var(--surface);transform:rotate(3deg);}
 @media(prefers-reduced-motion:no-preference){
-  .hero-art .phone,.tag{animation:rise 500ms cubic-bezier(0.16,1,0.3,1) both;}
+  .hero-art .phone,.tag{animation:rise 500ms cubic-bezier(0.16,1,0.3,1) backwards;}
   .hero-art .front{animation-delay:60ms;}
   .tag{animation-delay:200ms;}
 }
@@ -158,10 +155,9 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-0.025em;text-wrap:balance;}
 
 /* ---- Home: what you can keep (marquee) ---- */
 .keeps{overflow:hidden;margin-top:44px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
-.keeps-track{display:flex;width:max-content;animation:slide 45s linear infinite;}
-.keeps:hover .keeps-track{animation-play-state:paused;}
+.keeps-track{display:flex;width:max-content;animation:slide 90s linear infinite;}
 .keep{width:196px;margin-right:16px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;background:var(--surface);border:var(--line) solid var(--ink);border-radius:22px;padding:10px 10px 16px;}
-.keep img{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:14px;border:1px solid var(--border);margin-bottom:6px;}
+.keep img{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:10.5px;border:1px solid var(--border);margin-bottom:6px;}
 .keep b{font-family:var(--display);font-weight:600;font-size:15.5px;line-height:1.2;letter-spacing:-0.01em;}
 .keep small{font-size:13.5px;color:var(--ink-2);line-height:1.2;}
 .keep small strong{font-family:var(--display);font-weight:700;font-size:17px;color:var(--ink);}
@@ -408,3 +404,8 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-0.025em;text-wrap:balance;}
 .lp-foot a:hover{color:var(--ink);}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:20px;padding-top:18px;border-top:1px solid var(--band-line);font-size:14px;}
 .foot-links a{color:var(--ink);text-underline-offset:3px;}
+
+/* Tilted text blurs on 1x screens, so keep these straight there */
+@media (max-resolution:1.49dppx),(-webkit-max-device-pixel-ratio:1.49){
+  .hero-art .back,.tag.one,.tag.two,.sticky:nth-child(n),.plus > .tab{transform:none;}
+}

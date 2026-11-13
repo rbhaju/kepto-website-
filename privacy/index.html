@@ -57,11 +57,12 @@
     <section class="summary" aria-label="The short version">
       <span class="tab">The short version</span>
       <ul>
-        <li>We collect nothing. Kepto has no analytics, ads, tracking, accounts or servers of ours.</li>
+        <li>The app collects nothing. Kepto has no analytics, ads, tracking, accounts or servers of ours.</li>
         <li>Your receipts, photos and documents stay on your device. Sync and backup go only to your own iCloud or Google account, and you can turn them off.</li>
         <li>Receipt scanning and AI parsing run entirely on your phone.</li>
         <li>Vault documents are encrypted on your device and never synced or backed up, so they can't be recovered if you lose the phone.</li>
         <li>Purchases are handled by Apple or Google. We never see your payment details.</li>
+        <li>We only hear from you if you choose to: an email or support message, or joining Kepto news.</li>
       </ul>
       <p class="summary-note">A summary for convenience. The full text below is what applies.</p>
     </section>
@@ -75,19 +76,19 @@
     <h2 id="where-your-data-is-stored">Where your data is stored</h2>
     <span class="plat">On iPhone</span>
     <ul>
-      <li>Your receipts, photos, warranty records, subscriptions, and settings are stored on your device.</li>
-      <li><strong>iCloud Sync is on by default</strong>, so a reinstall or a new iPhone or iPad on the same Apple ID gets your receipts back. Your items, receipt photos, custom categories, subscriptions, and the labels of vault documents sync through your own private iCloud database. Turn it off any time in Settings, Sync &amp; Backup, where Kepto also shows when it last synced.</li>
+      <li>Your receipts, photos, warranty records, bills, subscriptions, and settings are stored on your device.</li>
+      <li><strong>iCloud Sync is on by default</strong>, so a reinstall or a new iPhone or iPad on the same Apple ID gets your receipts back. Your items and receipt photos, bills and subscriptions (including each past bill and its photo), your own categories, sub-categories and rooms, the store pictures you add, and the labels of vault documents sync through your own private iCloud database. Turn it off any time in Settings, Sync &amp; Backup, where Kepto also shows when it last synced.</li>
       <li>Apple's privacy terms apply to iCloud. Retriever Labs has no access to your iCloud data.</li>
     </ul>
     <span class="plat">On Android</span>
     <ul>
       <li>Your data is stored on your device.</li>
-      <li><strong>Back up to Google is on by default.</strong> Kepto uses Android's Auto Backup to copy its data to your own Google account, so it comes back when you reinstall Kepto or set up a new phone. The backup holds your items, subscriptions, custom categories, settings, and as many receipt photos as fit Google's backup size limit, newest first. It is backup and restore, not continuous sync. Turn it off any time in Settings, Backup.</li>
+      <li><strong>Back up to Google is on by default.</strong> Kepto uses Android's Auto Backup to copy its data to your own Google account, so it comes back when you reinstall Kepto or set up a new phone. The backup holds your items, bills and subscriptions with their past bills, your own categories, sub-categories and rooms, settings, and as many photos as fit Google's backup size limit, newest first. It is backup and restore, not continuous sync. Turn it off any time in Settings, Backup.</li>
       <li>Google's privacy terms apply to that backup. Retriever Labs has no access to it.</li>
     </ul>
 
     <h2 id="manual-backup-files">Manual backup files</h2>
-    <p>You can export every receipt, every photo, every subscription, and every custom category to a single <code>.json</code> file from Settings. You choose where it goes: Files, iCloud Drive, Google Drive, email, AirDrop, or anywhere else your phone lets you share. Retriever Labs never sees the file. Restoring from a file merges by ID and never overwrites what is already on your device. Vault documents are not included in this file.</p>
+    <p>You can export every receipt, every photo, every bill and subscription with its past bills, your own categories and rooms, and your store pictures to a single <code>.json</code> file from Settings. You choose where it goes: Files, iCloud Drive, Google Drive, email, AirDrop, or anywhere else your phone lets you share. Retriever Labs never sees the file. Restoring from a file merges by ID and never overwrites what is already on your device. Vault documents are not included in this file.</p>
 
     <h2 id="on-device-ai-receipt-parsing">On-device AI receipt parsing</h2>
     <span class="plat">On iPhone</span>
@@ -102,11 +103,18 @@
       <li>Either way, the image, the recognised text, and the extracted fields stay on your device.</li>
     </ul>
 
-    <h2 id="on-device-receipt-text-recognition">On-device receipt text recognition</h2>
+    <h2 id="on-device-receipt-text-recognition">On-device scanning and text recognition</h2>
     <span class="plat">On iPhone</span>
-    <p>Receipt photos are read on your device by Apple's Vision framework. The image never leaves your phone.</p>
+    <p>Kepto's camera finds the edges of the receipt, squares it up, and cleans up the scan on your device, using Apple's Vision and Core Image. Receipt photos are then read on your device by Apple's Vision framework. The image never leaves your phone.</p>
     <span class="plat">On Android</span>
-    <p>Receipt photos are read on your device by Google's ML Kit Text Recognition, using a model built into the app. The image never leaves your phone.</p>
+    <p>Receipts are scanned with the ML Kit document scanner and read on your device by Google's ML Kit Text Recognition, using a model built into the app. The image never leaves your phone.</p>
+
+    <h2 id="widgets-shortcuts-and-sharing">Widgets, scan shortcuts and sharing</h2>
+    <ul>
+      <li><strong>Home screen widgets</strong> show what's expiring, your next bill and your spending. Kepto gives them a small summary through storage on your device that only Kepto and its widgets can read.</li>
+      <li><strong>Scan shortcuts</strong>, such as the Control Center and Lock Screen button on iPhone, the Quick Settings tile on Android, and holding the app icon, only open Kepto's camera. They send nothing anywhere.</li>
+      <li><strong>Sharing into Kepto.</strong> A photo or PDF you share into Kepto from another app passes through the same on-device storage and is added to Kepto on your phone.</li>
+    </ul>
 
     <h2 id="document-vault">Document Vault</h2>
     <p>The optional Document Vault keeps scans of personal documents such as passports, driver licences, ID cards, and insurance or health cards inside Kepto, on iPhone and on Android.</p>
@@ -137,12 +145,12 @@
       <li><strong>Camera:</strong> only when you scan a receipt or a vault document.</li>
       <li><strong>Face ID:</strong> only to unlock App Lock and the vault.</li>
       <li><strong>Add to Photos:</strong> only when you choose to save a receipt photo to your photo library. Picking a photo uses Apple's system picker, which gives Kepto only the photo you choose.</li>
-      <li><strong>Notifications:</strong> only with your permission, for warranty, service, subscription renewal, and free trial reminders.</li>
+      <li><strong>Notifications:</strong> only with your permission, for warranty, service, bill, subscription renewal, and free trial reminders, and reminders you set yourself.</li>
     </ul>
     <span class="plat">On Android</span>
     <ul>
       <li><strong>Camera:</strong> only when you scan a receipt or a vault document.</li>
-      <li><strong>Notifications</strong> (Android 13 and newer): optional, for warranty, service, subscription renewal, and free trial reminders.</li>
+      <li><strong>Notifications</strong> (Android 13 and newer): optional, for warranty, service, bill, subscription renewal, and free trial reminders, and reminders you set yourself.</li>
       <li><strong>Biometrics:</strong> to unlock App Lock and the vault with your fingerprint or face.</li>
       <li><strong>Photos:</strong> Kepto uses Android's system photo picker, so it receives only the images you choose and has no gallery or storage access.</li>
       <li>Kepto requests <strong>no internet permission</strong>.</li>
@@ -153,14 +161,18 @@
     <p>The Kepto+ one-time unlock is handled by Apple's App Store (StoreKit). Apple tells Kepto only whether you own it, with a transaction ID. Retriever Labs never sees your Apple ID, payment method, or location.</p>
     <span class="plat">On Android</span>
     <p>The Kepto+ one-time unlock is handled by Google Play Billing. Google tells Kepto only whether you own it, with an order ID. Retriever Labs never sees your Google account, payment method, or location.</p>
+    <p>Optional tips are one-time purchases handled the same way. They unlock nothing, and we learn no more about you from them.</p>
 
     <h2 id="apple-and-google-components">Apple and Google components</h2>
     <p>Kepto uses no third-party SDKs beyond the platform components below, and none of them sends your receipts, photos, or documents anywhere.</p>
     <ul>
-      <li><strong>iPhone:</strong> Apple's Vision, VisionKit (document scanner), Foundation Models, CryptoKit, Local Authentication, StoreKit, and CloudKit (for iCloud Sync, when it is on).</li>
+      <li><strong>iPhone:</strong> Apple's AVFoundation (camera), Vision, Core Image, VisionKit (document scanner), Foundation Models, CryptoKit, Local Authentication, StoreKit, WidgetKit and App Intents (widgets and scan shortcuts), and CloudKit (for iCloud Sync, when it is on).</li>
       <li><strong>Android:</strong> Google ML Kit Text Recognition (built into the app), the ML Kit document scanner (provided by Google Play services and run on your device), Google AI Edge (AICore), AndroidX Biometric, and Google Play Billing.</li>
     </ul>
     <p class="lp-note">Android versions released before October 2026 also allowed Google's ML Kit to send anonymous usage metrics about text recognition to Google. These never included receipt images or text. Current versions request no internet permission, so this no longer happens.</p>
+
+    <h2 id="messages-you-send-us">Messages you send us</h2>
+    <p>If you email <a href="mailto:support@kepto.com.au">support@kepto.com.au</a> or <a href="mailto:hello@kepto.com.au">hello@kepto.com.au</a>, or use the form on our <a href="../support/">Support</a> page, we receive your message and your email address. Our email is forwarded to our inbox by Cloudflare, and the Support form is delivered by FormSubmit. Send feedback in Kepto's Settings opens your own email app with a draft that includes Kepto's version and your device model and system version; nothing is sent unless you send it. We use your message only to reply and to improve Kepto, and we delete it if you ask.</p>
 
     <h2 id="kepto-news-emails">Kepto news emails</h2>
     <p>This is separate from the app. If you join Kepto news on <a href="../news/">kepto.com.au/news</a>, we keep your email address so we can send a short email when Kepto gets something new. The list is held by <a href="https://buttondown.com/legal/privacy">Buttondown</a>, our newsletter service. We send you one email to confirm before you are added, we use your address for nothing else, and we never sell or share it. Every email has a link to leave, which removes you at once; you can also ask at <a href="mailto:support@kepto.com.au">support@kepto.com.au</a>.</p>
@@ -172,7 +184,7 @@
     <p>We will update this page if anything changes, and move the effective date at the top.</p>
 
     <h2 id="contact">Contact</h2>
-    <p>For questions or to exercise your data rights, <a href="../support/">contact us via kepto.com.au/support</a>.</p>
+    <p>For questions or to exercise your data rights, email <a href="mailto:support@kepto.com.au">support@kepto.com.au</a> or <a href="../support/">contact us via kepto.com.au/support</a>.</p>
 
     <p class="lp-note">This document describes how Kepto handles your information. It is provided for transparency and is not legal advice.</p>
   </div>
@@ -184,12 +196,14 @@
       <li><a href="#where-your-data-is-stored">Where your data is stored</a></li>
       <li><a href="#manual-backup-files">Manual backup files</a></li>
       <li><a href="#on-device-ai-receipt-parsing">On-device AI receipt parsing</a></li>
-      <li><a href="#on-device-receipt-text-recognition">On-device receipt text recognition</a></li>
+      <li><a href="#on-device-receipt-text-recognition">On-device scanning and text recognition</a></li>
+      <li><a href="#widgets-shortcuts-and-sharing">Widgets, scan shortcuts and sharing</a></li>
       <li><a href="#document-vault">Document Vault</a></li>
       <li><a href="#app-lock-and-biometrics">App Lock and biometrics</a></li>
       <li><a href="#permissions-we-request">Permissions we request</a></li>
       <li><a href="#in-app-purchases">In-app purchases</a></li>
       <li><a href="#apple-and-google-components">Apple and Google components</a></li>
+      <li><a href="#messages-you-send-us">Messages you send us</a></li>
       <li><a href="#kepto-news-emails">Kepto news emails</a></li>
       <li><a href="#children">Children</a></li>
       <li><a href="#changes-to-this-policy">Changes to this policy</a></li>

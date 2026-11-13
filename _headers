@@ -1,0 +1,6 @@
+# Cloudflare Pages headers. Lets browsers reuse images and CSS for a week
+# (CSS is still cache-busted with ?v=N on every change).
+/img/*
+  Cache-Control: public, max-age=604800
+/css/*
+  Cache-Control: public, max-age=604800

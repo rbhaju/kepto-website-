@@ -32,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap">
 <link rel="preload" as="image" href="img/app-home.webp" imagesrcset="img/app-home.webp 600w, img/app-home-900.webp 900w" imagesizes="(max-width: 600px) 220px, 280px" fetchpriority="high">
-<link rel="stylesheet" href="css/site.css?v=18">
+<link rel="stylesheet" href="css/site.css?v=19">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -45,6 +45,7 @@
   </a>
   <nav class="pill-nav" aria-label="Main navigation">
     <a href="/" class="active">Home</a>
+    <a href="news/">News</a>
     <a href="support/">Support</a>
     <a href="privacy/">Privacy</a>
     <a href="terms/">Terms</a>
@@ -288,6 +289,16 @@
             <span><small>Get it on</small>Google Play</span>
           </a>
         </div>
+        <form class="news-signup home-news" action="https://buttondown.com/api/emails/embed-subscribe/kepto" method="post">
+          <label class="form-label" for="home-news-email">Hear what's new in Kepto</label>
+          <div class="news-signup-row">
+            <input class="form-input" id="home-news-email" type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+            <input type="hidden" name="embed" value="1">
+            <input type="hidden" name="tag" value="home">
+            <button class="form-submit" type="submit">Join</button>
+          </div>
+          <p class="home-news-note">A short email a few times a year. Nothing else. <a href="news/">Past updates</a></p>
+        </form>
       </div>
     </div>
   </section>

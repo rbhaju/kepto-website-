@@ -52,8 +52,10 @@
   </div>
 
   <div class="lp-prose">
-    <section class="summary" aria-label="Get the news by email">
+    <section class="summary" id="join" aria-label="Get the news by email">
       <span class="tab">Get it by email</span>
+      <p class="news-joined" id="newsJoined" style="display:none;"><strong>Almost there.</strong> Check your inbox and tap the link in the email from Kepto to confirm.</p>
+      <p class="news-joined" id="newsConfirmed" style="display:none;"><strong>You're in.</strong> We'll email you when Kepto gets something new.</p>
       <p>A short email a few times a year when Kepto gets something new. Nothing else, and every email has a link to leave.</p>
       <form class="news-signup" action="https://buttondown.com/api/emails/embed-subscribe/kepto" method="post">
         <label class="form-label" for="news-email">Your email</label>
@@ -164,5 +166,16 @@
   </div>
 </footer>
 
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var shown = q.get('confirmed') === '1' ? 'newsConfirmed' : q.get('joined') === '1' ? 'newsJoined' : null;
+    if (!shown) return;
+    document.getElementById(shown).style.display = 'block';
+    var form = document.querySelector('.news-signup');
+    if (form) form.style.display = 'none';
+    document.getElementById('join').scrollIntoView();
+  })();
+</script>
 </body>
 </html>

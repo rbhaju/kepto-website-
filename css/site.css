@@ -366,6 +366,11 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-0.025em;text-wrap:balance;}
 .form-submit{display:inline-flex;align-items:center;justify-content:center;gap:9px;width:100%;min-height:48px;border:none;border-radius:999px;padding:12px 26px;cursor:pointer;background:var(--ink);color:#fff;font-family:var(--body);font-weight:700;font-size:15.5px;transition:transform 150ms,box-shadow 150ms;}
 .form-submit:hover{transform:translateY(-2px);box-shadow:0 10px 22px -8px rgba(28,26,21,0.5);}
 .form-submit .ic{width:18px;height:18px;stroke:#fff;fill:none;}
+.news-signup{margin:18px 0 0;}
+.news-signup-row{display:flex;gap:10px;}
+.news-signup-row .form-input{flex:1;min-width:0;background:var(--surface);}
+.news-signup-row .form-submit{width:auto;flex:none;}
+@media (max-width:420px){.news-signup-row{flex-direction:column;}.news-signup-row .form-submit{width:100%;}}
 
 /* ---- Download page ---- */
 .dl{max-width:780px;margin:72px auto 96px;padding:0 var(--gutter);text-align:center;}

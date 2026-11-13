@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap">
-<link rel="stylesheet" href="../css/site.css?v=17">
+<link rel="stylesheet" href="../css/site.css?v=18">
 </head>
 <body>
 
@@ -54,8 +54,17 @@
   <div class="lp-prose">
     <section class="summary" aria-label="Get the news by email">
       <span class="tab">Get it by email</span>
-      <p>A short email a few times a year when Kepto gets something new. Nothing else, and you can leave any time by replying "stop".</p>
-      <p><a href="mailto:hello@kepto.com.au?subject=Add%20me%20to%20Kepto%20news&amp;body=Please%20add%20this%20email%20address%20to%20Kepto%20news.">Email us to join Kepto news</a></p>
+      <p>A short email a few times a year when Kepto gets something new. Nothing else, and every email has a link to leave.</p>
+      <form class="news-signup" action="https://buttondown.com/api/emails/embed-subscribe/kepto" method="post">
+        <label class="form-label" for="news-email">Your email</label>
+        <div class="news-signup-row">
+          <input class="form-input" id="news-email" type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          <input type="hidden" name="embed" value="1">
+          <input type="hidden" name="tag" value="website">
+          <button class="form-submit" type="submit">Join</button>
+        </div>
+        <p class="summary-note">We'll send one email to confirm it's you. Your address is kept by Buttondown, our newsletter service, and used for nothing else. See <a href="../privacy/#kepto-news-emails">Privacy</a>.</p>
+      </form>
     </section>
 
     <h2 id="november-2026-scanning">Mid November 2026</h2>

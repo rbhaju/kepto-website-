@@ -23,6 +23,7 @@ Kepto is made by Retriever Labs Pvt. Ltd. The website is https://kepto.com.au.
 - [Support](https://kepto.com.au/support/): common questions about privacy, sync and backup, the vault, App Lock, promo codes, Kepto+ and tax, plus a contact form
 - [Privacy Policy](https://kepto.com.au/privacy/): what data is collected (none) and where data is stored
 - [Terms of Use](https://kepto.com.au/terms/): the terms for using the app
+- [Kepto news](https://kepto.com.au/news/): what is new in each Kepto release, and how to join the occasional news email
 - [Delete your data](https://kepto.com.au/delete-data/): how to remove Kepto data from a phone and from the user's own iCloud or Google backup; there is no account to delete
 - [Download](https://kepto.com.au/download/): sends a phone to the right store
 

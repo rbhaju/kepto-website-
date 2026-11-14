@@ -15,12 +15,12 @@ Kepto is made by Retriever Labs Pvt. Ltd. The website is https://kepto.com.au.
 - Warranty length: Kepto does not look anything up online. It fills in a typical warranty for the item's category, which the user can change.
 - Sync and backup: on iPhone, iCloud Sync through the user's own private iCloud. On Android, backup and restore through the user's own Google account. Any user can also export a full backup file.
 - Document Vault: scans of passports, licences and IDs are encrypted on the phone with a key that never leaves it, and open only with Face ID, Touch ID, a fingerprint or the screen lock. Vault documents are never synced or backed up, so they cannot be recovered if the phone is lost.
-- Also included: bills and subscriptions with renewal reminders, tax and GST on every receipt, 150+ currencies, six themes and four paper styles.
+- Also included: bills and subscriptions with renewal reminders and past bills kept month by month, reminders at a time you choose plus your own reminders on anything, three home screen widgets, one-tap scanning from the app icon, Lock Screen, Control Center or Android Quick Settings, sub-categories and your own room names, tax and GST on every receipt, 150+ currencies, six themes and four paper styles.
 
 ## Pages
 
 - [Home](https://kepto.com.au/): what Kepto does, how it works and pricing
-- [Support](https://kepto.com.au/support/): common questions about privacy, sync and backup, the vault, App Lock, promo codes, Kepto+ and tax, plus a contact form
+- [Support](https://kepto.com.au/support/): common questions about privacy, sync and backup, the vault, App Lock, quick scanning, widgets, reminders, promo codes, Kepto+ and tax, plus a contact form
 - [Privacy Policy](https://kepto.com.au/privacy/): what data is collected (none) and where data is stored
 - [Terms of Use](https://kepto.com.au/terms/): the terms for using the app
 - [Kepto news](https://kepto.com.au/news/): what is new in each Kepto release, and how to join the occasional news email

@@ -50,7 +50,7 @@
     <img class="lp-logo" src="../img/kepto-logo-sm.png" alt="Kepto">
     <div class="lp-eyebrow">Privacy Policy</div>
     <h1>Everything stays on your device<span class="dot">.</span></h1>
-    <div class="lp-meta">Effective 14 November 2026</div>
+    <div class="lp-meta">Effective 15 November 2026</div>
   </div>
 
   <div class="lp-prose">
@@ -61,7 +61,7 @@
         <li>The app collects nothing. Kepto has no analytics, ads, tracking, accounts or servers of ours.</li>
         <li>Your receipts, photos and documents stay on your device. Sync and backup go only to your own iCloud or Google account, and you can turn them off.</li>
         <li>Receipt scanning and AI parsing run entirely on your phone.</li>
-        <li>Vault documents are encrypted on your device and never backed up. On iPhone and iPad you can choose to keep them in your own iCloud, still encrypted; otherwise they can't be recovered if you lose the phone.</li>
+        <li>Vault documents are encrypted on your device and never put in a backup file. On iPhone and iPad they sync through your own iCloud while iCloud Sync is on, still encrypted. On Android they stay on the phone and can't be recovered if you lose it.</li>
         <li>Purchases are handled by Apple or Google. We never see your payment details.</li>
         <li>We only hear from you if you choose to: an email or support message, or joining Kepto news.</li>
       </ul>
@@ -78,7 +78,7 @@
     <span class="plat">On iPhone</span>
     <ul>
       <li>Your receipts, photos, warranty records, bills, subscriptions, and settings are stored on your device.</li>
-      <li><strong>iCloud Sync is on by default</strong>, so a reinstall or a new iPhone or iPad on the same Apple ID gets your receipts back. Your items and receipt photos, bills and subscriptions (including each past bill and its photo), your own categories, sub-categories and rooms, the store pictures you add, and vault documents (their scans encrypted on the device first, as described below) sync through your own private iCloud database. Turn it off any time in Settings, Sync &amp; Backup, where Kepto also shows when it last synced.</li>
+      <li><strong>iCloud Sync is on by default</strong>, so a reinstall or a new iPhone or iPad on the same Apple ID gets your receipts back. Your items and receipt photos, bills and subscriptions (including each past bill and its photo), your own categories, sub-categories and rooms, the store pictures you add, and vault documents (their scans encrypted on the device first, as described below) sync through your own private iCloud database. Turn it off any time in Settings, Sync &amp; backup, where Kepto also shows when it last synced.</li>
       <li>Apple's privacy terms apply to iCloud. Retriever Labs has no access to your iCloud data.</li>
     </ul>
     <span class="plat">On Android</span>
@@ -108,11 +108,11 @@
     <span class="plat">On iPhone</span>
     <p>Kepto's camera finds the edges of the receipt, squares it up, and cleans up the scan on your device, using Apple's Vision and Core Image. Receipt photos are then read on your device by Apple's Vision framework. The image never leaves your phone.</p>
     <span class="plat">On Android</span>
-    <p>Receipts are scanned with the ML Kit document scanner and read on your device by Google's ML Kit Text Recognition, using a model built into the app. The image never leaves your phone.</p>
+    <p>Kepto's camera finds the edges of the receipt, squares it up, and cleans up the scan on your device, using Android's CameraX. Receipt photos are then read on your device by Google's ML Kit Text Recognition, using a model built into the app. The image never leaves your phone.</p>
 
     <h2 id="widgets-shortcuts-and-sharing">Widgets, scan shortcuts and sharing</h2>
     <ul>
-      <li><strong>Home screen widgets</strong> show what's expiring, your next bill and your spending. Kepto gives them a small summary through storage on your device that only Kepto and its widgets can read.</li>
+      <li><strong>Home screen widgets</strong> show what's expiring, your next bill, your spending, or one receipt, bill or subscription you choose to follow. Kepto gives them a small summary through storage on your device that only Kepto and its widgets can read.</li>
       <li><strong>Scan shortcuts</strong>, such as the Control Center and Lock Screen button on iPhone, the Quick Settings tile on Android, and holding the app icon, only open Kepto's camera. They send nothing anywhere.</li>
       <li><strong>Sharing into Kepto.</strong> A photo or PDF you share into Kepto from another app passes through the same on-device storage and is added to Kepto on your phone.</li>
     </ul>
@@ -120,13 +120,13 @@
     <h2 id="document-vault">Document Vault</h2>
     <p>The optional Document Vault keeps scans of personal documents such as passports, driver licences, ID cards, and insurance or health cards inside Kepto, on iPhone and on Android.</p>
     <ul>
-      <li><strong>Encrypted on your device.</strong> Each page is encrypted on your device with AES-256. The key is created on the device and kept in the iOS Keychain for this device only (iPhone) or in the Android Keystore (Android). It never leaves the device and is not part of any backup.</li>
+      <li><strong>Encrypted on your device.</strong> Each page is encrypted on your device with AES-256. The device key is created on the device and kept in the iOS Keychain for this device only (iPhone) or in the Android Keystore (Android). That key never leaves the device and is not part of any backup. The first-page previews on vault cards are decrypted in memory only and cleared when the vault locks.</li>
       <li><strong>Locked when you open it.</strong> Opening the vault needs Face ID, Touch ID, or your device passcode on iPhone (or your App Lock, if you use it), and your fingerprint, face, or screen lock on Android.</li>
-      <li><strong>Scans stay on the device unless you choose iCloud.</strong> By default the scans are left out of iCloud, Android Auto Backup, and the manual backup file. A document's label, type, and expiry date can travel with your other data: through iCloud Sync on iPhone, and in your Google backup on Android. Another device can't open those documents, because the scans exist only on the device that made them, so Kepto hides them there (iPhone) or marks them as not on this device (Android).</li>
-      <li><strong>Synced with iCloud Sync (iPhone and iPad, automatic).</strong> While iCloud Sync is on, each scan is encrypted on your device with a second key before it goes to your own private iCloud database. That key is kept in your iCloud Keychain, which Apple encrypts end to end, so only your own devices signed into the same Apple ID can open the scans. Apple and Retriever Labs can't read them. If iCloud Sync is off, nothing new goes to iCloud. Android vault scans always stay on the phone.</li>
+      <li><strong>Never in a backup file.</strong> Vault scans are left out of Android Auto Backup and the manual backup file. On iPhone they reach iCloud only through the encrypted sync described next. On Android a document's label, type, and expiry date can travel in your Google backup, but the scans exist only on the phone that made them, so another device marks them as not on this device.</li>
+      <li><strong>Synced with iCloud Sync (iPhone and iPad, automatic).</strong> While iCloud Sync is on, each scan is encrypted on your device with a second key before it goes to your own private iCloud database. That key is kept in your iCloud Keychain, which Apple encrypts end to end, so only your own devices signed into the same Apple ID can open the scans. Apple and Retriever Labs can't read them. If iCloud Sync is off, nothing new goes to iCloud. Deleting a synced document removes it from all your devices. Android vault scans always stay on the phone.</li>
       <li><strong>Never sent to us.</strong> Vault documents are never transmitted to Retriever Labs. We have no servers that could receive them.</li>
       <li><strong>Not recoverable unless synced.</strong> On Android, or on iPhone and iPad with iCloud Sync off, the key lives only on your device, so if you lose, reset, or replace your phone, or delete Kepto, the documents in your vault are gone, and neither you nor we can recover them. With iCloud Sync on, they come back on an iPhone or iPad signed into the same Apple ID once iCloud Keychain has synced. Either way, keep your own separate copy of anything you cannot afford to lose.</li>
-      <li><strong>Exporting.</strong> You can export a document as a JPEG or PDF through the share sheet. That copy leaves Kepto's encryption and is handled by wherever you send it. On iPhone, Kepto deletes its own temporary copy once sharing finishes.</li>
+      <li><strong>Sharing and downloading.</strong> From the full-screen viewer you can share or download a page as a JPEG, or a whole document as a PDF. That copy leaves Kepto's encryption and is handled by wherever you send or save it. Kepto deletes its own temporary copy once you are done.</li>
     </ul>
 
     <h2 id="app-lock-and-biometrics">App Lock and biometrics</h2>
@@ -169,7 +169,7 @@
     <p>Kepto uses no third-party SDKs beyond the platform components below, and none of them sends your receipts, photos, or documents anywhere.</p>
     <ul>
       <li><strong>iPhone:</strong> Apple's AVFoundation (camera), Vision, Core Image, VisionKit (document scanner), Foundation Models, CryptoKit, Local Authentication, StoreKit, WidgetKit and App Intents (widgets and scan shortcuts), and CloudKit (for iCloud Sync, when it is on).</li>
-      <li><strong>Android:</strong> Google ML Kit Text Recognition (built into the app), the ML Kit document scanner (provided by Google Play services and run on your device), Google AI Edge (AICore), AndroidX Biometric, and Google Play Billing.</li>
+      <li><strong>Android:</strong> AndroidX CameraX (camera), Google ML Kit Text Recognition (built into the app), Google AI Edge (AICore), AndroidX Biometric, and Google Play Billing.</li>
     </ul>
     <p class="lp-note">Android versions released before October 2026 also allowed Google's ML Kit to send anonymous usage metrics about text recognition to Google. These never included receipt images or text. Current versions request no internet permission, so this no longer happens.</p>
 

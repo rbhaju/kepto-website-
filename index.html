@@ -70,7 +70,7 @@
         </a>
       </div>
       <p class="rank"><b>Reached #17 in Productivity</b> on the Australian App Store, November 2026</p>
-      <p class="rank"><b>2,300+ people</b> have unlocked Kepto+</p>
+      <p class="rank"><b>3,000+ people</b> have unlocked Kepto+</p>
       <p class="note">On iPhone, iPad and Android. <a href="#how">See how it works</a></p>
     </div>
 
@@ -230,27 +230,27 @@
         <h2>The questions people ask<span class="dot">.</span></h2>
       </div>
       <div class="faq">
-        <details>
+        <details name="faq">
           <summary>Is my data private?</summary>
           <div class="ans"><p>Yes. Kepto has no account, no ads, and no tracking, and no Retriever Labs servers ever receive your data. Your receipts, photos, and documents are processed and stored on your device.</p></div>
         </details>
-        <details>
+        <details name="faq">
           <summary>How much does Kepto cost?</summary>
           <div class="ans"><p>Kepto is free for up to 25 receipts. Kepto+ is a one-time purchase, not a subscription, and unlocks unlimited items, a photo on every receipt, unlimited vault documents, exports, service reminders, custom categories, and advanced stats.</p></div>
         </details>
-        <details>
+        <details name="faq">
           <summary>Does Kepto need the internet?</summary>
           <div class="ans"><p>No. Scanning, parsing, reminders, and everything else run on your device, so Kepto works fully offline. On iPhone, iCloud Sync uses your connection when it's available. On Android the app requests no internet permission at all.</p></div>
         </details>
-        <details>
+        <details name="faq">
           <summary>Is Kepto on Android?</summary>
           <div class="ans"><p>Yes. Kepto runs on iPhone, iPad and Android, and you'll find it on the App Store and Google Play.</p></div>
         </details>
-        <details>
+        <details name="faq">
           <summary>I got a new phone. Will my data come back?</summary>
           <div class="ans"><p>Yes, if iCloud Sync (iPhone) or Back up to Google (Android) was on. Sign into the same Apple ID or Google account and your receipts return. Vault documents are never restored on a new device.</p></div>
         </details>
-        <details>
+        <details name="faq">
           <summary>Can I get my vault documents back if I lose my phone?</summary>
           <div class="ans"><p>No. The vault's encryption key never leaves your phone and is never backed up, so the documents can't be recovered by you or by us. Keep your own copy of anything important; you can export any document from the vault.</p></div>
         </details>
@@ -331,6 +331,14 @@
     }, { rootMargin: '0px 0px -8% 0px' });
     els.forEach(function (el) { io.observe(el); });
   }());
+</script>
+<script>
+  // One FAQ answer open at a time (name="faq" does this natively; this covers older browsers).
+  document.querySelectorAll('details[name="faq"]').forEach(function (d, _, all) {
+    d.addEventListener('toggle', function () {
+      if (d.open) all.forEach(function (o) { if (o !== d) o.open = false; });
+    });
+  });
 </script>
 </body>
 </html>

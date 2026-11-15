@@ -53,8 +53,8 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-0.025em;text-wrap:balance;}
 .brand img{height:40px;width:auto;display:block;}
 .brand span{font-family:var(--display);font-weight:700;font-size:28px;letter-spacing:-0.03em;line-height:1;}
 .brand:hover{color:var(--ink);}
-.pill-nav{display:flex;gap:2px;background:var(--surface);padding:4px;border-radius:999px;border:var(--line) solid var(--ink);}
-.pill-nav a{color:var(--ink);text-decoration:none;font-size:15px;font-weight:600;line-height:1;padding:10px 16px;border-radius:999px;border:1px solid transparent;transition:background 150ms;white-space:nowrap;}
+.pill-nav{display:flex;gap:2px;background:var(--surface);padding:4px;border-radius:14px;border:var(--line) solid var(--ink);}
+.pill-nav a{color:var(--ink);text-decoration:none;font-size:15px;font-weight:600;line-height:1;padding:10px 16px;border-radius:10px;border:1px solid transparent;transition:background 150ms;white-space:nowrap;}
 .pill-nav a:hover{background:var(--band);}
 .pill-nav a.active{background:var(--amber-soft);border-color:var(--ink);}
 @media(max-width:560px){

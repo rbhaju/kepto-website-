@@ -180,8 +180,8 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-0.025em;text-wrap:balance;}
 .step-copy{padding:36px 24px 26px;min-height:168px;flex:1;}
 .step h3{font-weight:600;font-size:21px;line-height:1.15;}
 .step p{margin-top:10px;font-size:15.5px;color:var(--ink-2);}
-.step-shot{flex:none;background:var(--bg);border-top:1px solid var(--border);border-radius:0 0 calc(var(--radius) - 2px) calc(var(--radius) - 2px);padding:36px 20px 0;display:flex;justify-content:center;overflow:hidden;height:420px;}
-.step-shot .phone{--pw:230px;align-self:flex-start;}
+.step-shot{flex:none;background:var(--bg);border-top:1px solid var(--border);border-radius:0 0 calc(var(--radius) - 2px) calc(var(--radius) - 2px);padding:32px 20px 34px;display:flex;justify-content:center;}
+.step-shot .phone{--pw:220px;}
 @media(max-width:900px){
   .steps{grid-template-columns:minmax(0,1fr);max-width:440px;margin-inline:auto;gap:44px;}
   .step-copy{min-height:0;}

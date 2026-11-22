@@ -32,6 +32,12 @@ Kepto is made by Retriever Labs Pvt. Ltd. The website is https://kepto.com.au.
 - [App Store](https://apps.apple.com/au/app/kepto/id6775776531): iPhone and iPad
 - [Google Play](https://play.google.com/store/apps/details?id=au.com.retrieverlabs.kepto): Android
 
+## Guides
+
+- [How long to keep receipts for tax in Australia](https://kepto.com.au/guides/how-long-to-keep-receipts-for-tax-australia/)
+- [Is a photo of a receipt proof of purchase?](https://kepto.com.au/guides/is-a-photo-of-a-receipt-proof-of-purchase/)
+- [How to keep track of warranties](https://kepto.com.au/guides/how-to-keep-track-of-warranties/)
+
 ## Contact
 
 - Email: support@kepto.com.au (Kepto help), hello@kepto.com.au (everything else)

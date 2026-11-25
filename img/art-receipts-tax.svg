@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img">
+<defs>
+<filter id="w" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5"/></filter>
+<filter id="w2" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="17" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7"/></filter>
+</defs>
+<style>.f{fill:#E3AC33}.d{fill:#B8841A}.p{fill:#FBF4E2}.l{fill:none;stroke:#221D15;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}.t{fill:none;stroke:#221D15;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.g{fill:none;stroke:#B8841A;stroke-width:2.4;stroke-linecap:round;stroke-dasharray:2 9}</style>
+<path class="g" d="M40 262 H680"/>
+<g filter="url(#w2)">
+<path class="p" d="M0 0 h120 v170 l-15 -10 l-15 10 l-15 -10 l-15 10 l-15 -10 l-15 10 l-15 -10 l-15 10 z" transform="translate(120 60)"/>
+<rect class="f" x="128" y="66" width="120" height="34"/>
+<path class="f" d="M300 130 h70 l16 18 h110 v112 h-196 z"/>
+<rect class="p" x="540" y="90" width="130" height="150" rx="14"/>
+<rect class="f" x="547" y="96" width="130" height="40" rx="10"/>
+</g>
+<g filter="url(#w)">
+<path class="l" d="M0 0 h120 v170 l-15 -10 l-15 10 l-15 -10 l-15 10 l-15 -10 l-15 10 l-15 -10 l-15 10 z" transform="translate(120 60)"/>
+<path class="t" d="M140 112 h80 M140 134 h56 M140 156 h80 M140 190 h30 M190 190 h30"/>
+<path class="l" d="M300 130 h70 l16 18 h110 v112 h-196 z"/>
+<path class="l" d="M300 170 h196"/>
+<path class="t" d="M372 208 h52"/>
+<path class="t" d="M330 130 v-26 h60 v44 M350 104 v-16 h60 v60"/>
+<rect class="l" x="540" y="90" width="130" height="150" rx="14"/>
+<path class="l" d="M540 132 H670 M572 76 v26 M638 76 v26"/>
+<path class="l" d="M622 156 h-30 l-4 26 c26 -10 40 4 36 20 c-4 16 -26 18 -38 6"/>
+<path class="t" d="M80 80 l10 10 M90 80 l-10 10 M510 60 v14 M503 67 h14"/>
+</g></svg>

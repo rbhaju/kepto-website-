@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img">
+<defs>
+<filter id="w" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="6" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5"/></filter>
+<filter id="w2" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="23" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7"/></filter>
+</defs>
+<style>.f{fill:#E3AC33}.d{fill:#B8841A}.p{fill:#FBF4E2}.l{fill:none;stroke:#221D15;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}.t{fill:none;stroke:#221D15;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.g{fill:none;stroke:#B8841A;stroke-width:2.4;stroke-linecap:round;stroke-dasharray:2 9}</style>
+<path class="g" d="M40 262 H680"/>
+<g filter="url(#w2)">
+<path class="p" d="M0 0 h120 v170 l-15 -10 l-15 10 l-15 -10 l-15 10 l-15 -10 l-15 10 l-15 -10 l-15 10 z" transform="translate(130 64)"/>
+<rect class="f" x="340" y="44" width="140" height="216" rx="22"/>
+<path class="p" d="M0 0 h78 v108 l-13 -8 l-13 8 l-13 -8 l-13 8 l-13 -8 l-13 8 z" transform="translate(368 84)"/>
+<circle class="f" cx="590" cy="150" r="52"/>
+</g>
+<g filter="url(#w)">
+<path class="l" d="M0 0 h120 v170 l-15 -10 l-15 10 l-15 -10 l-15 10 l-15 -10 l-15 10 l-15 -10 l-15 10 z" transform="translate(130 64)"/>
+<path class="t" d="M150 100 h80 M150 122 h56 M150 144 h80 M150 178 h30 M200 178 h30"/>
+<path class="t" d="M262 120 h56 M262 150 h56 M262 180 h56" stroke-dasharray="4 8"/>
+<rect class="l" x="340" y="44" width="140" height="216" rx="22"/>
+<path class="l" d="M0 0 h78 v108 l-13 -8 l-13 8 l-13 -8 l-13 8 l-13 -8 l-13 8 z" transform="translate(368 84)"/>
+<path class="t" d="M382 108 h50 M382 126 h34 M382 144 h50"/>
+<circle class="l" cx="410" cy="232" r="12"/>
+<path class="t" d="M392 58 h36"/>
+<circle class="l" cx="590" cy="150" r="52"/>
+<path class="l" d="M566 150 l18 20 l32 -40"/>
+<path class="t" d="M90 70 l10 10 M100 70 l-10 10 M640 70 v14 M633 77 h14"/>
+</g></svg>

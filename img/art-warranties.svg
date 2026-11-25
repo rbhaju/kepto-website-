@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img">
+<defs>
+<filter id="w" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="11" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5"/></filter>
+<filter id="w2" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="29" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7"/></filter>
+</defs>
+<style>.f{fill:#E3AC33}.d{fill:#B8841A}.p{fill:#FBF4E2}.l{fill:none;stroke:#221D15;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}.t{fill:none;stroke:#221D15;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.g{fill:none;stroke:#B8841A;stroke-width:2.4;stroke-linecap:round;stroke-dasharray:2 9}</style>
+<path class="g" d="M40 262 H680"/>
+<g filter="url(#w2)">
+<rect class="p" x="120" y="70" width="160" height="190" rx="14"/>
+<rect class="f" x="127" y="76" width="160" height="38" rx="10"/>
+<circle class="f" cx="204" cy="184" r="44" opacity="0.6"/>
+<path class="f" d="M400 70 c26 14 44 16 64 16 c0 70 -14 118 -64 146 c-50 -28 -64 -76 -64 -146 c20 0 38 -2 64 -16 z"/>
+<path class="d" d="M400 70 c26 14 44 16 64 16 c0 70 -14 118 -64 146 z" opacity="0.55"/>
+<path class="f" d="M540 214 c18 -12 18 -34 18 -58 c0 -62 84 -62 84 0 c0 24 0 46 18 58 z"/>
+</g>
+<g filter="url(#w)">
+<rect class="l" x="120" y="70" width="160" height="190" rx="14"/>
+<path class="l" d="M120 110 H280"/>
+<circle class="l" cx="200" cy="184" r="46"/>
+<circle class="t" cx="200" cy="184" r="28"/>
+<path class="t" d="M140 90 h24 M236 90 h4 M254 90 h4"/>
+<path class="l" d="M400 70 c26 14 44 16 64 16 c0 70 -14 118 -64 146 c-50 -28 -64 -76 -64 -146 c20 0 38 -2 64 -16 z"/>
+<path class="l" d="M374 150 l20 22 l34 -44"/>
+<path class="l" d="M540 214 c18 -12 18 -34 18 -58 c0 -62 84 -62 84 0 c0 24 0 46 18 58 z"/>
+<path class="l" d="M586 226 c4 16 24 16 28 0 M600 96 v-12"/>
+<path class="t" d="M520 130 c-8 14 -8 30 0 44 M680 130 c8 14 8 30 0 44"/>
+<path class="t" d="M80 100 l10 10 M90 100 l-10 10 M310 50 v14 M303 57 h14"/>
+</g></svg>

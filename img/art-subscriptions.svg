@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img">
+<defs>
+<filter id="w" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="12" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5"/></filter>
+<filter id="w2" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="21" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7"/></filter>
+</defs>
+<style>.f{fill:#E3AC33}.d{fill:#B8841A}.p{fill:#FBF4E2}.l{fill:none;stroke:#221D15;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}.t{fill:none;stroke:#221D15;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.g{fill:none;stroke:#B8841A;stroke-width:2.4;stroke-linecap:round;stroke-dasharray:2 9}</style>
+
+<path class="g" d="M40 262 H680"/>
+<g filter="url(#w2)">
+<rect class="p" x="110" y="70" width="170" height="170" rx="16"/>
+<rect class="f" x="118" y="76" width="170" height="46" rx="12"/>
+<rect class="f" x="352" y="118" width="170" height="104" rx="14" transform="rotate(-8 437 170)"/>
+<rect class="p" x="340" y="134" width="170" height="104" rx="14"/>
+<ellipse class="f" cx="604" cy="226" rx="44" ry="14"/>
+<ellipse class="f" cx="606" cy="206" rx="44" ry="14"/>
+<ellipse class="f" cx="602" cy="186" rx="44" ry="14"/>
+<circle class="f" cx="198" cy="176" r="34" opacity="0.55"/>
+</g>
+<g filter="url(#w)">
+<!-- calendar -->
+<rect class="l" x="110" y="70" width="170" height="170" rx="16"/>
+<path class="l" d="M110 116 H280"/>
+<path class="l" d="M150 56 v28 M240 56 v28"/>
+<!-- repeat arrow on the calendar -->
+<path class="l" d="M224 176 a30 30 0 1 1 -10 -22"/>
+<path class="l" d="M218 138 l-2 18 l-18 -2"/>
+<!-- two cards -->
+<rect class="l" x="352" y="118" width="170" height="104" rx="14" transform="rotate(-8 437 170)"/>
+<rect class="p" x="340" y="134" width="170" height="104" rx="14"/>
+<rect class="l" x="340" y="134" width="170" height="104" rx="14"/>
+<path class="l" d="M340 164 H510"/>
+<path class="t" d="M358 196 h46 M358 214 h80"/>
+<path class="l" d="M470 204 l10 10 l18 -22"/>
+<!-- coins -->
+<ellipse class="l" cx="604" cy="226" rx="44" ry="14"/>
+<path class="l" d="M560 206 c0 18 88 18 88 0"/>
+<path class="l" d="M558 186 c0 18 88 18 88 0"/>
+<ellipse class="l" cx="602" cy="172" rx="44" ry="14"/>
+<path class="t" d="M560 186 v40 M648 186 v40"/>
+<path class="t" d="M70 110 l10 10 M80 110 l-10 10 M560 96 v14 M553 103 h14 M320 70 l8 8 M328 70 l-8 8"/>
+</g>
+</svg>

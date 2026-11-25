@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img">
+<defs>
+<filter id="w" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5"/></filter>
+<filter id="w2" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="9" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7"/></filter>
+</defs>
+<style>.f{fill:#E3AC33}.d{fill:#B8841A}.p{fill:#FBF4E2}.l{fill:none;stroke:#221D15;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}.t{fill:none;stroke:#221D15;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.g{fill:none;stroke:#B8841A;stroke-width:2.4;stroke-linecap:round;stroke-dasharray:2 9}</style>
+
+<path class="g" d="M40 262 H680"/>
+<!-- fills, nudged off the lines like a quick marker -->
+<g filter="url(#w2)">
+<rect class="p" x="150" y="46" width="132" height="214" rx="14"/>
+<rect class="f" x="158" y="52" width="132" height="70" rx="12"/>
+<path class="f" d="M356 150 l92 -38 l40 96 l-92 38 z"/>
+<path class="f" d="M560 70 c26 14 44 16 64 16 c0 70 -14 118 -64 146 c-50 -28 -64 -76 -64 -146 c20 0 38 -2 64 -16 z"/>
+<path class="d" d="M560 70 c26 14 44 16 64 16 c0 70 -14 118 -64 146 z" opacity="0.55"/>
+</g>
+<g filter="url(#w)">
+<!-- fridge -->
+<rect class="l" x="150" y="46" width="132" height="214" rx="14"/>
+<path class="l" d="M150 122 H282"/>
+<path class="l" d="M170 78 v26 M170 142 v44"/>
+<path class="t" d="M164 262 v8 M268 262 v8"/>
+<!-- price tag -->
+<path class="l" d="M356 150 l92 -38 l40 96 l-92 38 z"/>
+<circle class="l" cx="378" cy="158" r="7"/>
+<path class="t" d="M371 152 c-30 -40 -60 -30 -84 -6"/>
+<path class="t" d="M408 172 l44 -18 M418 194 l44 -18 M428 216 l26 -11"/>
+<!-- shield with a question mark -->
+<path class="l" d="M560 70 c26 14 44 16 64 16 c0 70 -14 118 -64 146 c-50 -28 -64 -76 -64 -146 c20 0 38 -2 64 -16 z"/>
+<path class="l" d="M542 128 c0 -26 38 -26 38 -2 c0 16 -20 16 -20 36"/>
+<circle cx="560" cy="186" r="4.5" fill="#221D15"/>
+<!-- little sparks -->
+<path class="t" d="M96 96 l10 10 M106 96 l-10 10 M640 40 l8 8 M648 40 l-8 8 M330 60 v14 M323 67 h14"/>
+</g>
+</svg>

@@ -28,6 +28,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap">
 <link rel="stylesheet" href="../css/site.css?v=23">
+<style>
+.rel-hint{margin-top:34px;font-size:14px;opacity:0.7;}
+.rel{border-top:1px solid rgba(0,0,0,0.14);}
+.rel:last-of-type{border-bottom:1px solid rgba(0,0,0,0.14);}
+.rel summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 2px;}
+.rel summary::-webkit-details-marker{display:none;}
+.rel summary h2{margin:0;font-size:18px;line-height:1.3;}
+.rel summary::after{content:"+";font-size:22px;line-height:1;font-weight:500;flex:none;}
+.rel[open] summary::after{content:"\2212";}
+.rel[open]{padding-bottom:18px;}
+.rel > :nth-child(2){margin-top:0;}
+</style>
 </head>
 <body>
 
@@ -104,7 +116,9 @@
       <li>If you already use Kepto, nothing changes until you choose it. New installs start with Hand-drawn.</li>
     </ul>
 
-    <h2 id="coming-soon-7-5">iPhone 7.5 · Android 1.11</h2>
+    <p class="rel-hint">Earlier releases. Tap one to open it.</p>
+    <details class="rel" id="coming-soon-7-5">
+      <summary><h2>iPhone 7.5 · Android 1.11</h2></summary>
     <p>23 November 2026</p>
 
     <span class="plat">A new look, if you want it</span>
@@ -142,8 +156,9 @@
       <li>It understands the 4a, 4b and 5 field codes on driving licences, "Valid to", and dates given as a month and year.</li>
       <li>A scanned number is still only offered for you to check. Reading happens on your phone and nothing is sent anywhere.</li>
     </ul>
-
-    <h2 id="late-november-2026">iPhone 7.4 · Android 1.10</h2>
+    </details>
+    <details class="rel" id="late-november-2026">
+      <summary><h2>iPhone 7.4 · Android 1.10</h2></summary>
     <p>Late November 2026</p>
 
     <span class="plat">Bills and subscriptions</span>
@@ -170,8 +185,9 @@
       <li>Improved PDF, CSV and folder ZIP exports for receipts.</li>
       <li>Choose Tax claims only in date range export and select PDF for a report of the items marked for tax.</li>
     </ul>
-
-    <h2 id="november-2026-icons">iPhone 7.3 · Android 1.8 and 1.9</h2>
+    </details>
+    <details class="rel" id="november-2026-icons">
+      <summary><h2>iPhone 7.3 · Android 1.8 and 1.9</h2></summary>
     <p>Mid November 2026: hand-drawn icons, a Cards setting, receipts split into their items, and a vault that syncs through iCloud on iPhone. 7.2 didn't reach the App Store, so on iPhone and iPad, 7.3 also brings everything in the 7.2 notes below.</p>
 
     <span class="plat">Receipts with several items</span>
@@ -222,8 +238,9 @@
       <li>Android: swipe actions and the Quick Settings scan tile use the new icons</li>
       <li>A bigger crown on the Kepto+ card, and swipe through its lines</li>
     </ul>
-
-    <h2 id="november-2026-scanning">iPhone 7.2 · Android 1.7</h2>
+    </details>
+    <details class="rel" id="november-2026-scanning">
+      <summary><h2>iPhone 7.2 · Android 1.7</h2></summary>
     <p>Mid November 2026: a rebuilt scanner, one-tap scanning, and bills kept month by month.</p>
 
     <span class="plat">Scanning, rebuilt (iPhone)</span>
@@ -268,8 +285,9 @@
       <li>Send feedback straight from Settings</li>
       <li>Fixes for small iPhones and iPad</li>
     </ul>
-
-    <h2 id="november-2026">iPhone 7.1 · Android 1.6</h2>
+    </details>
+    <details class="rel" id="november-2026">
+      <summary><h2>iPhone 7.1 · Android 1.6</h2></summary>
     <span class="plat">Early November 2026</span>
     <ul>
       <li>Receipts, Bills and Subscriptions each have their own tab and page</li>
@@ -278,8 +296,9 @@
       <li>Extra warranties, return windows and document expiry reminders</li>
       <li>Tax claims with work use, and export as folders</li>
     </ul>
-
-    <h2 id="november-2026-widgets">iPhone 7.0 · Android 1.5</h2>
+    </details>
+    <details class="rel" id="november-2026-widgets">
+      <summary><h2>iPhone 7.0 · Android 1.5</h2></summary>
     <span class="plat">Early November 2026</span>
     <ul>
       <li>Three home screen widgets: warranties, next bill and spending</li>
@@ -287,8 +306,9 @@
       <li>Your own categories get their own filter and Stats row</li>
       <li>Groceries, meals and fuel are filed without a warranty</li>
     </ul>
-
-    <h2 id="october-2026">iPhone 6.9 · Android 1.4</h2>
+    </details>
+    <details class="rel" id="october-2026">
+      <summary><h2>iPhone 6.9 · Android 1.4</h2></summary>
     <span class="plat">Late October 2026</span>
     <ul>
       <li>Scan a bill and Kepto tracks it, with a reminder before it is due</li>
@@ -296,8 +316,9 @@
       <li>Group receipts by month, category, room, store or warranty</li>
       <li>Scanned IDs go straight to the Document Vault</li>
     </ul>
-
-    <h2 id="october-2026-subscriptions">27 October 2026</h2>
+    </details>
+    <details class="rel" id="october-2026-subscriptions">
+      <summary><h2>27 October 2026</h2></summary>
     <span class="plat">iPhone and iPad</span>
     <ul>
       <li>Track subscriptions, with a reminder before each renewal and before a free trial ends</li>
@@ -306,15 +327,17 @@
       <li>Press and hold a receipt to edit, archive or delete it</li>
       <li>Warranty reminders arrive once, at 9am</li>
     </ul>
-
-    <h2 id="october-2026-categories">19 October 2026</h2>
+    </details>
+    <details class="rel" id="october-2026-categories">
+      <summary><h2>19 October 2026</h2></summary>
     <span class="plat">iPhone and iPad</span>
     <ul>
       <li>Your own categories appear when you add or edit an item</li>
       <li>Screens no longer slide sideways at larger text sizes</li>
     </ul>
-
-    <h2 id="october-2026-sync">13 October 2026</h2>
+    </details>
+    <details class="rel" id="october-2026-sync">
+      <summary><h2>13 October 2026</h2></summary>
     <span class="plat">iPhone and iPad</span>
     <ul>
       <li>iCloud sync keeps your iPhone and iPad in step, and Settings shows when it last synced</li>
@@ -322,8 +345,9 @@
       <li>Pinch to zoom into receipt photos</li>
       <li>Larger text sizes, clearer text and better VoiceOver</li>
     </ul>
-
-    <h2 id="july-2026">iPhone 6.2</h2>
+    </details>
+    <details class="rel" id="july-2026">
+      <summary><h2>iPhone 6.2</h2></summary>
     <span class="plat">July 2026</span>
     <ul>
       <li>The Document Vault: keep passports, licences and ID cards, encrypted on your device</li>
@@ -331,8 +355,9 @@
       <li>Scan documents with edge detection, crop and several pages</li>
       <li>Renewal dates, so you know before a passport or licence expires</li>
     </ul>
-
-    <h2 id="june-2026-ipad">iPhone 6.1</h2>
+    </details>
+    <details class="rel" id="june-2026-ipad">
+      <summary><h2>iPhone 6.1</h2></summary>
     <span class="plat">Late June 2026</span>
     <ul>
       <li>A proper iPad layout with a sidebar</li>
@@ -340,8 +365,9 @@
       <li>Sharing or saving a receipt photo works every time</li>
       <li>Delete All for the archive</li>
     </ul>
-
-    <h2 id="june-2026">iPhone 6.0</h2>
+    </details>
+    <details class="rel" id="june-2026">
+      <summary><h2>iPhone 6.0</h2></summary>
     <span class="plat">June 2026</span>
     <ul>
       <li>Smart Scan reads receipts on your device, with Apple Intelligence on newer iPhones</li>
@@ -350,6 +376,7 @@
       <li>More than 150 currencies</li>
       <li>A new Rose theme</li>
     </ul>
+    </details>
   </div>
 
   <nav class="toc" aria-label="Contents">
@@ -393,6 +420,16 @@
     var form = document.querySelector('.news-signup');
     if (form) form.style.display = 'none';
     document.getElementById('join').scrollIntoView();
+  })();
+</script>
+<script>
+  (function () {
+    function openFromHash() {
+      var el = location.hash && document.getElementById(location.hash.slice(1));
+      if (el && el.tagName === 'DETAILS') { el.open = true; el.scrollIntoView(); }
+    }
+    window.addEventListener('hashchange', openFromHash);
+    openFromHash();
   })();
 </script>
 </body>
